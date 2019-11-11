@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:padding="30dp">
+
+    <ImageView
+            android:layout_width="232dp"
+            android:layout_height="130dp" app:srcCompat="@drawable/badge_background"
+            android:id="@+id/imageView3"/>
+    <TextView
+            android:text="Ecoostetrica transvaginal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView4" android:textSize="18sp"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="Texto de prueba Texto de prueba Texto de prueba Texto de prueba Texto de prueba Texto de prueba Texto de prueba Texto de prueba Texto de prueba Texto de prueba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView5" android:textSize="14sp"/>
+
+</LinearLayout>

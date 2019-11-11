@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Prenatal</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_home2">ActivityHome213</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home_tab">HomeTabActivity</string>
+    <string name="tab_text_1">1 Trímestre</string>
+    <string name="tab_text_2">2 Trímestre</string>
+    <string name="tab_text_3">3 Trímestre</string>
+    <string name="tab_text_4">4 semana de embarazo</string>
+    <string name="tab_text_5">5 semana de embarazo</string>
+    <string name="tab_text_6">6 semana de embarazo</string>
+    <string name="tab_text_7">7 semana de embarazo</string>
+    <string name="tab_text_8">8 semana de embarazo</string>
+    <string name="tab_text_9">9 semana de embarazo</string>
+    <string name="tab_text_10">10 semana de embarazo</string>
+    <string name="title_activity_home_casillas">HomeCasillasActivity</string>
+</resources>
