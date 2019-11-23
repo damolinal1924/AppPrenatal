@@ -1,10 +1,12 @@
 package com.mlsoluciones.prenatal
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.MenuItemCompat
@@ -12,6 +14,9 @@ import androidx.viewpager.widget.ViewPager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.tabs.TabLayout
 import com.mlsoluciones.prenatal.ui.main.SectionsPagerAdapter
+import kotlinx.android.synthetic.main.activity_ecografia.*
+import android.widget.ImageView
+
 
 class EcografiaActivity : AppCompatActivity() {
 
@@ -19,23 +24,23 @@ class EcografiaActivity : AppCompatActivity() {
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                textMessage.setText(R.string.title_home)
+                textMessage.setText("")
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_ecografia -> {
-                textMessage.setText("Ecografias")
+                textMessage.setText("")
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_vacuna -> {
-                textMessage.setText("Vacunas")
+                textMessage.setText("")
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_examenes -> {
-                textMessage.setText("Examenes")
+                textMessage.setText("")
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_perfil -> {
-                textMessage.setText("Perfil")
+                textMessage.setText("")
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -48,8 +53,8 @@ class EcografiaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ecografia)
-
-        val navView: BottomNavigationView = findViewById(R.id.nav_view)
+        // incrusta el menu de navegacion de abajo
+        val navView: BottomNavigationView = findViewById(R.id.nav_view_ecografia)
 
         textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
@@ -60,6 +65,15 @@ class EcografiaActivity : AppCompatActivity() {
         viewPager.adapter = sectionsPagerAdapter
         val tabs: TabLayout = findViewById(R.id.tabs)
         tabs.setupWithViewPager(viewPager)
+
+        //tabs.addTab(tabs.newTab().setIcon(R.drawable.ic_car))
+        tabs.getTabAt(0)!!.setIcon(R.drawable.ic_semana1)
+        tabs.getTabAt(1)!!.setIcon(R.drawable.ic_semana2)
+        tabs.getTabAt(2)!!.setIcon(R.drawable.ic_semana3)
+
+        // Se selecciona opcion por defecto del BottomNavigationView
+        nav_view_ecografia.getMenu().getItem(1).setChecked(true)
+
     }
 
     // se asocia el menu ActionBar a la activity actual
@@ -115,4 +129,10 @@ class EcografiaActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+    fun clickButton(v: View){
+        val intento1 = Intent(this, ActivitySubirEcografia::class.java)
+        startActivity(intento1)
+    }
+
 }

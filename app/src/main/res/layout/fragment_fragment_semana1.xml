@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentSemana1"
-    android:background="@color/colorAccent">
+    tools:context=".FragmentSemana1">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -36,10 +34,35 @@
                     android:textSize="12sp" />
 
             <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/" />
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="A partir de este segundo trimestre de vida, el peso y el
+                    crecimiento en general se van ralentizando. Así durante este tiempo,
+                    las ganancias diarias son en torno a 20 gramos y las semanales alrededor
+                    de 140 gramos. De esta manera, suele ganar alrededor de 2 kilos en este
+                    segundo trimestre.  La longitud del bebé también aumenta más despacio,
+                    de manera que, en los 3 meses siguientes, crece unos 6,5 cm, frente a los 10,5 cm que crece en los 3 primeros. Al final de este mes, el peso y la talla promedio serán respectivamente de 6,100 kilogramos y 63 centímetros.  Entre los cuatro y los seis meses, se desarrolla la visión del color del bebé. Ya reconoce los objetos y los busca. Observa las caras con mucha atención, y no sólo se centra en los ojos como cuando era más pequeño. Empezará a diferenciar los sonidos: la voz de mamá, la de papá, y los de la música que le gusta. Empieza a desarrollar su sociabilidad.  El bebé ya no querrá estar solo y dedica mucho tiempo a examinar las cosas. Sonríe a su imagen reflejada en un espejo y al ver a personas que le son familiares, pero también empieza a mostrar timidez ante los extraños (es la primera señal de su 'yo' emergente). Ejerce un mayor control sobre su cabeza en posición erecta. Cuando está boca abajo, se apoya sobre las manos abiertas y, si está acostado de espaldas, dobla el cuello hacia delante para verse los pies, mientras trata de agarrárselos con las manos. Durante este mes, suelen empezar a darse la vuelta y prefieren estar sentados, porque ven con facilidad lo que hay alrededor.  Los padres deben estar más pendientes cuando dejen al bebé en lugares altos como el cambiador o la cama de matrimonio. El bebé ya no para de moverse. Sigue a sus padres con la vista dentro de un radio de 180 ºC y muestra una gran curiosidad por todo lo que le rodea. Su coordinación mano-vista-objeto aumenta, demostrando anticipación en abrir la mano lpara poder agarrar lo que desea.  Se lleva objetos a la boca, un instinto natural que le ayuda a desarrollar la percepción de su cuerpo. Ponle en la mano objetos de fácil presión y distintas texturas para fomentar su capacidad de coger cosas y explorarlas. El bebé será capaz de coger un juguete y pasarlo de una mano a otra sin que se le caiga. Le encantará jugar con los sonajeros, los muñecos de peluche, y con el chupete." />
 
         </LinearLayout>
     </ScrollView>

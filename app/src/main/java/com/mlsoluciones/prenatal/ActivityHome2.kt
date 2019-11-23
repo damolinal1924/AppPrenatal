@@ -1,5 +1,6 @@
 package com.mlsoluciones.prenatal
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -27,35 +28,76 @@ class ActivityHome2 : AppCompatActivity() {
                 }
             }
         } }
-    private val possibleItems = listOf(
+    private val semanasEmbarazoItems = listOf(
         Item("Semana de embarazo", R.drawable.ic_semana1),
+        Item("Semanas de embarazo", R.drawable.ic_semana2),
+        Item("Semanas de embarazo", R.drawable.ic_semana3),
+        Item("Semanas de embarazo", R.drawable.ic_semana4),
+        Item("Semanas de embarazo", R.drawable.ic_semana5),
+        Item("Semanas de embarazo", R.drawable.ic_semana6),
+        Item("Semanas de embarazo", R.drawable.ic_semana7),
+        Item("Semanas de embarazo", R.drawable.ic_semana8),
+        Item("Semanas de embarazo", R.drawable.ic_semana9),
         Item("Semanas de embarazo", R.drawable.ic_semana10),
-        Item("Semanas de embarazo", R.drawable.ic_food),
-        Item("Semanas de embarazo", R.drawable.ic_gas),
-        Item("Semanas de embarazo", R.drawable.ic_home)
+        Item("Semanas de embarazo", R.drawable.ic_semana11),
+        Item("Semanas de embarazo", R.drawable.ic_semana12),
+        Item("Semanas de embarazo", R.drawable.ic_semana13),
+        Item("Semanas de embarazo", R.drawable.ic_semana14),
+        Item("Semanas de embarazo", R.drawable.ic_semana15),
+        Item("Semanas de embarazo", R.drawable.ic_semana16),
+        Item("Semanas de embarazo", R.drawable.ic_semana17),
+        Item("Semanas de embarazo", R.drawable.ic_semana18),
+        Item("Semanas de embarazo", R.drawable.ic_semana19),
+        Item("Semanas de embarazo", R.drawable.ic_semana20),
+        Item("Semanas de embarazo", R.drawable.ic_semana21),
+        Item("Semanas de embarazo", R.drawable.ic_semana22),
+        Item("Semanas de embarazo", R.drawable.ic_semana23),
+        Item("Semanas de embarazo", R.drawable.ic_semana24),
+        Item("Semanas de embarazo", R.drawable.ic_semana25),
+        Item("Semanas de embarazo", R.drawable.ic_semana26),
+        Item("Semanas de embarazo", R.drawable.ic_semana27),
+        Item("Semanas de embarazo", R.drawable.ic_semana28),
+        Item("Semanas de embarazo", R.drawable.ic_semana29),
+        Item("Semanas de embarazo", R.drawable.ic_semana30),
+        Item("Semanas de embarazo", R.drawable.ic_semana31),
+        Item("Semanas de embarazo", R.drawable.ic_semana32),
+        Item("Semanas de embarazo", R.drawable.ic_semana33),
+        Item("Semanas de embarazo", R.drawable.ic_semana34),
+        Item("Semanas de embarazo", R.drawable.ic_semana35),
+        Item("Semanas de embarazo", R.drawable.ic_semana36),
+        Item("Semanas de embarazo", R.drawable.ic_semana37),
+        Item("Semanas de embarazo", R.drawable.ic_semana38),
+        Item("Semanas de embarazo", R.drawable.ic_semana39),
+        Item("Semanas de embarazo", R.drawable.ic_semana40)
     )
 
     private lateinit var textMessage: TextView
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                textMessage.setText(R.string.title_home)
+                textMessage.setText("")
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_ecografia -> {
-                textMessage.setText("Ecografias")
+                textMessage.setText("")
+                val intento1 = Intent(this, EcografiaActivity::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_vacuna -> {
-                textMessage.setText("Vacunas")
+                textMessage.setText("")
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_examenes -> {
-                textMessage.setText("Examenes")
+                textMessage.setText("")
+                val intento1 = Intent(this, ActivityExamenes::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_perfil -> {
-                textMessage.setText("Perfil")
+                textMessage.setText("")
+                val intento1 = Intent(this, ActivityPerfil::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -68,7 +110,7 @@ class ActivityHome2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home2)
-        val navView: BottomNavigationView = findViewById(R.id.nav_view)
+        val navView: BottomNavigationView = findViewById(R.id.nav_view_home)
 
         textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
@@ -77,15 +119,27 @@ class ActivityHome2 : AppCompatActivity() {
         item_list.initialize(itemAdapter)
         item_list.setViewsToChangeColor(listOf(R.id.list_item_background, R.id.list_item_text))
         itemAdapter.setItems(getLargeListOfItems())
+
+        loadSemana1(FragmentSemana1())
+
+        // Se selecciona opcion por defecto del BottomNavigationView
+        nav_view_home.getMenu().getItem(0).setChecked(true)
+
+        // agrega el icono de ir atras del menu actionBar
+         var actionbar = supportActionBar
+        actionbar!!.title = "Prenatal"
+
+        actionbar.setDisplayHomeAsUpEnabled(true)
+        actionbar.setDisplayShowHomeEnabled(true)
+
     }
 
+    // metodo que agrega cada uno de los numeros de semanas a la lista
     private fun getLargeListOfItems(): List<Item> {
         val items = mutableListOf<Item>()
-        items.add(possibleItems.get(0))
-        items.add(possibleItems.get(1))
-        items.add(possibleItems.get(2))
-        items.add(possibleItems.get(3))
-        items.add(possibleItems.get(4))
+        semanasEmbarazoItems.forEach {
+            items.add(it)
+        }
         return items
     }
     // se asocia el menu ActionBar a la activity actual
@@ -112,7 +166,6 @@ class ActivityHome2 : AppCompatActivity() {
                 onOptionsItemSelected(menuItem)
             }
         })
-
         return true
     }
 
@@ -152,6 +205,12 @@ class ActivityHome2 : AppCompatActivity() {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.fragment,frag)
         ft.commit()
+    }
+
+    // metodo que realiza el ir atras del actionBar
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
     }
 }
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:dist="http://schemas.android.com/apk/distribution"
-          package="com.mlsoluciones.prenatal">
+        xmlns:dist="http://schemas.android.com/apk/distribution"
+        package="com.mlsoluciones.prenatal">
 
-    <dist:module dist:instant="true"/>
+    <dist:module dist:instant="true" />
 
     <application
             android:allowBackup="true"
@@ -12,26 +12,24 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".EcografiaActivity">
-        </activity>
+        <activity android:name=".ActivityExamenes"></activity>
+        <activity android:name=".ActivityPerfil" />
+        <activity android:name=".ActivitySubirEcografia" />
+        <activity android:name=".EcografiaActivity" />
         <activity
                 android:name=".HomeTabActivity"
                 android:label="@string/title_activity_home_tab"
-                android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+                android:theme="@style/AppTheme.NoActionBar" />
         <activity
                 android:name=".ActivityHome2"
-                android:label="@string/title_activity_home2">
-        </activity>
-        <activity android:name=".ActivityLogin">
-        </activity>
-        <activity android:name=".RegistrateActivity">
-        </activity>
+                android:label="@string/title_activity_home2" />
+        <activity android:name=".ActivityLogin" />
+        <activity android:name=".RegistrateActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 

@@ -3,9 +3,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="14dp"
-        android:paddingStart="24dp"
+        android:paddingStart="14dp"
         android:paddingTop="16dp"
-        android:paddingEnd="24dp"
+        android:paddingEnd="14dp"
         android:paddingBottom="16dp">
 
     <ImageView
@@ -29,6 +29,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="12dp"
             android:textColor="@color/design_default_color_primary"
-            android:textSize="7sp" />
+            android:textSize="6sp" />
 
 </RelativeLayout>

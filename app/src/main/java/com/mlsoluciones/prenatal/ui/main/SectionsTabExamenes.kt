@@ -1,7 +1,6 @@
 package com.mlsoluciones.prenatal.ui.main
 
 import android.content.Context
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
@@ -17,7 +16,7 @@ private val TAB_TITLES = arrayOf(
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
  * one of the sections/tabs/pages.
  */
-class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) : FragmentPagerAdapter(fm) {
+class SectionsTabExamenes(private val context: Context, fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
         // getItem is called to instantiate the fragment for the given page.
@@ -27,10 +26,10 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) : 
         // Se invoca la fragment segun el tab que se seleccione
         when(position){
             0 -> {
-                return FragmentEcografiaTrimestre1()
+                return Semana1()
             }
             1 -> {
-                return Semana1()
+                return FragmentEcografiaTrimestre1()
             }
             2 -> {
                 return PruevaActivity()
