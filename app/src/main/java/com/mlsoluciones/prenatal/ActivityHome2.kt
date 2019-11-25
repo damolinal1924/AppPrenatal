@@ -26,6 +26,30 @@ class ActivityHome2 : AppCompatActivity() {
                 1 -> {
                     loadSemana2(FragmentSemana2())
                 }
+                2 -> {
+                    loadSemana3(FragmentSemana3())
+                }
+                3 -> {
+                    loadSemana4(FragmentSemana4())
+                }
+                4 -> {
+                    loadSemana5(FragmentSemana5())
+                }
+                5 -> {
+                    loadSemana6(FragmentSemana6())
+                }
+                6 -> {
+                    loadSemana7(FragmentSemana7())
+                }
+                7 -> {
+                    loadSemana8(FragmentSemana8())
+                }
+                8 -> {
+                    loadSemana9(FragmentSemana9())
+                }
+                9 -> {
+                    loadSemana10(FragmentSemana10())
+                }
             }
         } }
     private val semanasEmbarazoItems = listOf(
@@ -202,6 +226,47 @@ class ActivityHome2 : AppCompatActivity() {
     }
 
     private fun loadSemana2(frag: FragmentSemana2) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana3(frag: FragmentSemana3) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana4(frag: FragmentSemana4) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana5(frag: FragmentSemana5) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana6(frag: FragmentSemana6) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana7(frag: FragmentSemana7) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana8(frag: FragmentSemana8) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana9(frag: FragmentSemana9) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana10(frag: FragmentSemana10) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.fragment,frag)
         ft.commit()

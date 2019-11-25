@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentSemana1">
+    tools:context=".FragmentSemana8">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -22,7 +22,7 @@
                     android:layout_height="wrap_content"
                     android:paddingStart="20dp"
                     android:paddingTop="15dp"
-                    android:text="1 semana - día 1"
+                    android:text="8 semana - día 1"
                     android:textStyle="bold" />
 
             <TextView
@@ -53,11 +53,12 @@
             <TextView
                     android:id="@+id/textView10"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="250dp"
                     android:layout_gravity="center_horizontal"
+                    android:gravity="top"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:text="Esta semana corresponde al periodo menstrual y es la que se usa para calcular la edad gestacional del feto además de calcular la fecha probable de parto." />
+                    android:text="En esta semana se empiezan a desarrollar los dedos de tu bebe además el aparato digestivo y respiratorio continúan su desarrollo, los ojos del bebe se empiezan a hacer más grandes y más notorios se forma la retina y el pigmento que nos da el color de los ojos y las protuberancias de los genitales para determinar el sexo del bebe se empiezan a formar." />
 
         </LinearLayout>
     </ScrollView>

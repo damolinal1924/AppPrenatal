@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentSemana1">
+    tools:context=".FragmentSemana3">
 
     <!-- TODO: Update blank fragment layout -->
-
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -22,7 +21,7 @@
                     android:layout_height="wrap_content"
                     android:paddingStart="20dp"
                     android:paddingTop="15dp"
-                    android:text="1 semana - día 1"
+                    android:text="3 semana - día 1"
                     android:textStyle="bold" />
 
             <TextView
@@ -53,11 +52,11 @@
             <TextView
                     android:id="@+id/textView10"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="110dp"
                     android:layout_gravity="center_horizontal"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:text="Esta semana corresponde al periodo menstrual y es la que se usa para calcular la edad gestacional del feto además de calcular la fecha probable de parto." />
+                    android:text="En esta semana el embrión ya se empieza a desarrollar, el ovulo fecundado pasas por un proceso llamado división celular, este grupo de células divididas se llama “morula” y esta se mueve desde las trompas de Falopio hasta el útero donde se implanta." />
 
         </LinearLayout>
     </ScrollView>

@@ -1,7 +1,6 @@
 package com.mlsoluciones.prenatal.ui.main
 
 import android.content.Context
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
@@ -30,7 +29,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) : 
                 return FragmentEcografiaTrimestre1()
             }
             1 -> {
-                return Semana1()
+                return FragmentExamenTrimestre1()
             }
             2 -> {
                 return PruevaActivity()

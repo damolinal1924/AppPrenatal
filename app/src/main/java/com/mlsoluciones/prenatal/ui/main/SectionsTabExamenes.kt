@@ -26,7 +26,7 @@ class SectionsTabExamenes(private val context: Context, fm: FragmentManager) : F
         // Se invoca la fragment segun el tab que se seleccione
         when(position){
             0 -> {
-                return Semana1()
+                return FragmentExamenTrimestre1()
             }
             1 -> {
                 return FragmentEcografiaTrimestre1()

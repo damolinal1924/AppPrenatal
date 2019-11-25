@@ -3,14 +3,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentSemana1"
-    android:background="@color/colorPrimary">
+    tools:context=".FragmentSemana2">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hola fragment 2 :)"
-        android:layout_gravity="center"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="2 semana - día 1"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/txtfechasem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="Jueves, 23 marzo, 2019"
+                    android:textSize="12sp" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="En esta semana generalmente el espermatozoide fecunda al ovulo, aún no sabemos sexo del bebe color de ojos o características físicas." />
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
