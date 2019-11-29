@@ -7,34 +7,57 @@
         android:layout_height="match_parent"
         tools:context=".EcografiaActivity">
 
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="@drawable/img_ecografia"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+        <TextView
+                android:id="@+id/textView5"
+                style="@android:style/Widget.DeviceDefault.Light.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:paddingTop="70dp"
+                android:text="Ecografias"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:shadowColor="@color/colorPrimary" />
+    </LinearLayout>
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".EcografiaActivity">
+            tools:context=".EcografiaActivity"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
 
         <com.google.android.material.appbar.AppBarLayout
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="120dp"
                 android:theme="@style/AppTheme.AppBarOverlay">
 
             <com.google.android.material.tabs.TabLayout
                     android:id="@+id/tabs"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
-                    app:tabTextColor="@color/cardview_shadow_start_color"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
                     app:tabSelectedTextColor="@color/colorPrimary"
-                    android:background="@color/white"/>
+                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                    app:tabTextColor="@color/cardview_shadow_start_color" />
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.viewpager.widget.ViewPager
                 android:id="@+id/view_pager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="120dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

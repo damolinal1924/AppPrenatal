@@ -1,6 +1,5 @@
 package com.mlsoluciones.prenatal
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -9,14 +8,9 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.MenuItemCompat
-import androidx.viewpager.widget.ViewPager
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.tabs.TabLayout
-import com.mlsoluciones.prenatal.ui.main.SectionsPagerAdapter
-import kotlinx.android.synthetic.main.activity_ecografia.*
 
-
-class EcografiaActivity : AppCompatActivity() {
+class ActivitySubirEcografiaTranslucenciaNucal : AppCompatActivity() {
 
     private lateinit var textMessage: TextView
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -46,31 +40,18 @@ class EcografiaActivity : AppCompatActivity() {
     }
 
     var textNotification_badge: TextView? = null
-    var mCartItemCount = 10
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ecografia)
-        // incrusta el menu de navegacion de abajo
-        val navView: BottomNavigationView = findViewById(R.id.nav_view_ecografia)
+        setContentView(R.layout.activity_subir_ecografia_translucencia_nucal)
+
+        val navView: BottomNavigationView = findViewById(R.id.nav_view_subir_ecografia_translucencia_nucal)
 
         textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
-        // codigo para los tab
-        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
-        val viewPager: ViewPager = findViewById(R.id.view_pager)
-        viewPager.adapter = sectionsPagerAdapter
-        val tabs: TabLayout = findViewById(R.id.tabs)
-        tabs.setupWithViewPager(viewPager)
-
-        //tabs.addTab(tabs.newTab().setIcon(R.drawable.ic_car))
-        tabs.getTabAt(0)!!.setIcon(R.drawable.ic_semana1)
-        tabs.getTabAt(1)!!.setIcon(R.drawable.ic_semana2)
-        tabs.getTabAt(2)!!.setIcon(R.drawable.ic_semana3)
-
         // Se selecciona opcion por defecto del BottomNavigationView
-        nav_view_ecografia.getMenu().getItem(1).setChecked(true)
+        navView.getMenu().getItem(1).setChecked(true)
 
     }
 
@@ -84,14 +65,14 @@ class EcografiaActivity : AppCompatActivity() {
         textNotification_badge = actionView.findViewById(R.id.notification_badge) as TextView
 
         // se quita el badge de notificacion cuando no exista nada que notificar
-        textNotification_badge!!.setText("");
-        Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
-        textNotification_badge!!.setBackgroundResource(android.R.color.transparent);
+        //textNotification_badge!!.setText("");
+        //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+        //textNotification_badge!!.setBackgroundResource(android.R.color.transparent);
 
         // se muestra el badge de notificacion cuando exista que notificar
-        //textNotification_badge!!.setText("58");
-        //textNotification_badge!!.setBackgroundResource(R.drawable.badge_background);
-        //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+        textNotification_badge!!.setText("3");
+        textNotification_badge!!.setBackgroundResource(R.drawable.badge_background);
+        Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
 
         actionView.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View) {
@@ -127,10 +108,4 @@ class EcografiaActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
-    fun clickButton(v: View){
-        val intento1 = Intent(this, ActivitySubirEccobtreticaTransvaginal::class.java)
-        startActivity(intento1)
-    }
-
 }

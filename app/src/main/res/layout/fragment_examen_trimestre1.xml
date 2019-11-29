@@ -23,7 +23,7 @@
                 tools:layout_editor_absoluteY="20dp">
 
             <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/btnEcooTransvaginal"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
                     android:textColor="@color/white" />
 
             <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/btnEcoTranslucenciaNucal"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
                     android:textColor="@color/white" />
 
             <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/btnDoopleArteria"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"

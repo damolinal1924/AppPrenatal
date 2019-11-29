@@ -9,10 +9,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.MenuItemCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.activity_ecografia.*
-import kotlinx.android.synthetic.main.activity_subir_ecografia.*
 
-class ActivitySubirEcografia : AppCompatActivity() {
+class ActivitySubirEccobtreticaTransvaginal : AppCompatActivity() {
 
     private lateinit var textMessage: TextView
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -45,7 +43,7 @@ class ActivitySubirEcografia : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_subir_ecografia)
+        setContentView(R.layout.activity_subir_eccobtretica_transvaginal)
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view_subir_ecografia)
 
@@ -54,6 +52,7 @@ class ActivitySubirEcografia : AppCompatActivity() {
 
         // Se selecciona opcion por defecto del BottomNavigationView
         navView.getMenu().getItem(1).setChecked(true)
+
     }
 
     // se asocia el menu ActionBar a la activity actual
