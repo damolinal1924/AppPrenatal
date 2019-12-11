@@ -7,47 +7,196 @@
         android:layout_height="match_parent"
         tools:context=".RegistrateActivity">
 
-    <LinearLayout
-            android:orientation="vertical"
+    <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp" android:layout_marginBottom="10dp">
-        <TextView
-                android:text="Regístrate"
+            android:layout_height="match_parent">
+
+        <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView" android:textColor="@android:color/black"
-                android:textSize="24sp" android:textStyle="bold" android:paddingTop="20dp"
-                android:paddingBottom="20dp"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:id="@+id/editText" android:hint="Nombre"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:id="@+id/editText2" android:hint="Correo eléctronico" android:paddingTop="20dp"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="phone"
-                android:id="@+id/editText3" android:hint="Teléfono" android:paddingTop="20dp"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:id="@+id/editText4" android:hint="Contraseña" android:paddingTop="20dp"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:id="@+id/editText5" android:hint="Repetir contraseña" android:paddingTop="20dp"
-        />
-        <Button
-                android:text="Continuar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/btnIniciarSesion" android:textAllCaps="false"
-        />
-    </LinearLayout>
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="60dp">
+
+            <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Regístrate"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre"
+                    android:inputType="textPersonName" />
+
+            <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Correo eléctronico"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="20dp" />
+
+            <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Teléfono"
+                    android:inputType="phone"
+                    android:paddingTop="20dp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoLink="all"
+                        android:hint="Madre RH-"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="16sp" />
+
+                <RadioGroup
+                        android:layout_width="83dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <RadioButton
+                            android:id="@+id/rbMadreRHsi"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="seleccionarMadreRH"
+                            android:paddingLeft="10dp"
+                            android:text="Si" />
+
+                    <RadioButton
+                            android:id="@+id/rbMadreRHno"
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="seleccionarMadreRH"
+                            android:text="No" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoLink="all"
+                        android:hint="Padre RH+"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="16sp" />
+
+                <RadioGroup
+                        android:layout_width="83dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <RadioButton
+                            android:id="@+id/rbPadreRHsi"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="seleccionarMadreRH"
+                            android:paddingLeft="10dp"
+                            android:text="Si" />
+
+                    <RadioButton
+                            android:id="@+id/rbPadreRHno"
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="seleccionarMadreRH"
+                            android:text="No" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoLink="all"
+                        android:hint="Hijo anterior RH+"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="16sp" />
+
+                <RadioGroup
+                        android:layout_width="83dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <RadioButton
+                            android:id="@+id/rbHijoRHsi"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="seleccionarMadreRH"
+                            android:paddingLeft="10dp"
+                            android:text="Si" />
+
+                    <RadioButton
+                            android:id="@+id/rbHijoRHno"
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="seleccionarMadreRH"
+                            android:text="No" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:paddingTop="20dp" />
+
+            <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Repetir contraseña"
+                    android:inputType="textPassword"
+                    android:paddingTop="20dp" />
+
+            <Button
+                    android:id="@+id/btnIniciarSesion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Continuar"
+                    android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
