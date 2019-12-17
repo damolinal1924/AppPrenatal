@@ -50,6 +50,96 @@ class ActivityHome2 : AppCompatActivity() {
                 9 -> {
                     loadSemana10(FragmentSemana10())
                 }
+                10 -> {
+                    loadSemana11(FragmentSemana11())
+                }
+                11 -> {
+                    loadSemana12(FragmentSemana12())
+                }
+                12 -> {
+                    loadSemana13(FragmentSemana13())
+                }
+                13 -> {
+                    loadSemana14(FragmentSemana14())
+                }
+                14 -> {
+                    loadSemana15(FragmentSemana15())
+                }
+                15 -> {
+                    loadSemana16(FragmentSemana16())
+                }
+                16 -> {
+                    loadSemana17(FragmentSemana17())
+                }
+                17 -> {
+                    loadSemana18(FragmentSemana18())
+                }
+                18 -> {
+                    loadSemana19(FragmentSemana19())
+                }
+                19 -> {
+                    loadSemana20(FragmentSemana20())
+                }
+                20 -> {
+                    loadSemana21(FragmentSemana21())
+                }
+                21 -> {
+                    loadSemana22(FragmentSemana22())
+                }
+                22 -> {
+                    loadSemana23(FragmentSemana23())
+                }
+                23 -> {
+                    loadSemana24(FragmentSemana24())
+                }
+                24 -> {
+                    loadSemana25(FragmentSemana25())
+                }
+                25 -> {
+                    loadSemana26(FragmentSemana26())
+                }
+                26 -> {
+                    loadSemana27(FragmentSemana27())
+                }
+                27 -> {
+                    loadSemana28(FragmentSemana28())
+                }
+                28 -> {
+                    loadSemana29(FragmentSemana29())
+                }
+                29 -> {
+                    loadSemana30(FragmentSemana30())
+                }
+                30 -> {
+                    loadSemana31(FragmentSemana31())
+                }
+                31 -> {
+                    loadSemana32(FragmentSemana32())
+                }
+                32 -> {
+                    loadSemana33(FragmentSemana33())
+                }
+                33 -> {
+                    loadSemana34(FragmentSemana34())
+                }
+                34 -> {
+                    loadSemana35(FragmentSemana35())
+                }
+                35 -> {
+                    loadSemana36(FragmentSemana36())
+                }
+                36 -> {
+                    loadSemana37(FragmentSemana37())
+                }
+                37 -> {
+                    loadSemana38(FragmentSemana38())
+                }
+                38 -> {
+                    loadSemana39(FragmentSemana39())
+                }
+                39 -> {
+                    loadSemana40(FragmentSemana40())
+                }
             }
         } }
     private val semanasEmbarazoItems = listOf(
@@ -134,6 +224,7 @@ class ActivityHome2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home2)
+
         val navView: BottomNavigationView = findViewById(R.id.nav_view_home)
 
         textMessage = findViewById(R.id.message)
@@ -267,6 +358,169 @@ class ActivityHome2 : AppCompatActivity() {
         ft.commit()
     }
     private fun loadSemana10(frag: FragmentSemana10) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana11(frag: FragmentSemana11) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana12(frag: FragmentSemana12) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana13(frag: FragmentSemana13) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana14(frag: FragmentSemana14) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana15(frag: FragmentSemana15) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana16(frag: FragmentSemana16) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana17(frag: FragmentSemana17) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana18(frag: FragmentSemana18) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana19(frag: FragmentSemana19) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana20(frag: FragmentSemana20) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana21(frag: FragmentSemana21) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana22(frag: FragmentSemana22) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+
+    private fun loadSemana23(frag: FragmentSemana23) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana24(frag: FragmentSemana24) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana25(frag: FragmentSemana25) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana26(frag: FragmentSemana26) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana27(frag: FragmentSemana27) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana28(frag: FragmentSemana28) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana29(frag: FragmentSemana29) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana30(frag: FragmentSemana30) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana31(frag: FragmentSemana31) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana32(frag: FragmentSemana32) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana33(frag: FragmentSemana33) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana34(frag: FragmentSemana34) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana35(frag: FragmentSemana35) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana36(frag: FragmentSemana36) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana37(frag: FragmentSemana37) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana38(frag: FragmentSemana38) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana39(frag: FragmentSemana39) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.fragment,frag)
+        ft.commit()
+    }
+    private fun loadSemana40(frag: FragmentSemana40) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.fragment,frag)
         ft.commit()

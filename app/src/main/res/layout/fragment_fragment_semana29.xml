@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana29">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="29 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="800dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 37-38 cm de la cabeza a los pies y el peso se encuentra sobre 1300-1350 gramos.\n\n En esta semana, se entra en el tercer y último trimestre del embarazo. El feto ya tiene cejas, pestañas y el cabello empieza a alargarse, haciéndose visible por ecografía en algunos casos. En estos momentos el feto ya empieza a abrir y cerrar los ojos, y sus ojos ya son sensibles a la presencia de luz. Sin embargo, aun no es capaz de ver nada ya que, debido a la ausencia de luz dentro del útero, la vista es el único sentido que no podrá experimentar hasta que haya nacido En este momento los huesos están completamente desarrollados y tiene su forma bien definida, pero permanecen blandos y flexibles ya que el proceso de osificación, que es lo que les da su rigidez, aún está produciéndose. La piel comienza a tornarse rosa y lisa y está cubierta por el vérmix (sustancia blanquecina con función protectora) que continúa aumentando. En estos momentos el diámetro de su cabeza todavía es mayor que el de su abdomen, por eso los niños prematuros suelen tener una cabeza desproporcionada en relación al resto del cuerpo. A partir de este momento, esta desproporción entre abdomen y cabeza empieza a revertirse lentamente hasta la semana 35, momento en el que el diámetro del abdomen es mayor que el de la cabeza. En estos momentos los testículos continúan con el proceso de descenso desde el abdomen hasta la bolsa escrotal.\n\n El aumento de peso en el tercer trimestre suele estar sobre los 5 kg, lo que supone un aumento de medio kilo por semana. Por ese motivo, la embarazada puede sentirse más torpe de movimientos de lo habitual y también notar que se cansa más rápido que antes." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

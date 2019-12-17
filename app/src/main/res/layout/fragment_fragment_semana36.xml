@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana36">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="36 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="750dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 47 cm de la cabeza a los pies y el peso se encuentra sobre 2.700 gramos.\n\n El feto ha aumentado mucho de tamaño y ya no se mueve con la misma libertad de antes, pues el espacio en el útero se ha reducido considerablemente. La mayoría de los fetos están ya en posición o presentación cefálica, aunque es posible que su cabeza todavía no se haya encajado en la pelvis. Su piel empieza a hacerse más rosada gracias a sus acúmulos de grasa y está perdiendo el lanugo (vello fino). Esta es la última semana en la que se considera un feto prematuro, ya que al finalizar esta semana estará formado por completo. Desde la semana 37 a la 42, se considera un bebé a término.\n\n A estas alturas es normal que la embarazada haya ganado unos 9 o 11 kg. Esto no solo se debe al peso del feto, la placenta y el líquido amniótico, el aumento del útero también representa un peso importante, así como el acúmulo de líquido, sobre todo en las extremidades o edemas, por dificultad en el retorno vascular. La cabeza del feto desciende a la pelvis materna conllevando una mayor presión en la zona del bajo abdomen y mayor dificultad para caminar y orinar. No obstante, aunque la aparición de edemas puede ser fisiológica, es importante vigilar que la tensión arterial se mantenga dentro de los límites normales (inferior a 140/90). Es normal también notar las contracciones de Braxton Hicks, en las que el abdomen se pone duro de forma irregular y no suelen ser dolorosas." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

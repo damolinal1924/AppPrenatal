@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana31">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="31 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="900dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 40 cm de la cabeza a los pies y el peso se encuentra sobre 1.700 gramos.\n\n A estas alturas del embarazo, el feto sigue en su proceso de crecimiento y maduración y todos los órganos se preparan para realizar su función tras el nacimiento. El aparato respiratorio está prácticamente formado. El sistema urinario continúa trabajando sin descanso. El riñón del feto es capaz de realizar el filtrado de la sangre y eliminar el resultado a través de la orina que acaba formando parte del líquido amniótico. En estos momentos, el contenido de la orina es muy similar al líquido amniótico, sólo que un poco más concentrada, ya que la producción del líquido amniótico en este momentos se debe en su gran mayoría a la orina y en muy pequeña parte a las membranas de la cavidad amniótica. En estos momentos el feto produce alrededor de medio litro de orina al día. Gracias a la acumulación de grasa subcutánea la piel aparece más rosada y su cara se puede observar más redondeada, recordando cada vez más a un bebé. El vérmix caseoso, la sustancia blanquecina con función protectora con la que nacen los bebés, sigue aumentando.\n\n Las molestias en la parte baja del abdomen pueden ir aumentando a medida que aumenta el volumen del abdomen. Además, debido a los cambios de configuración que se producen en la pelvis, pueden aparecer cuadros de dolor en esta zona que dificulten la movilidad. Dentro de la preparación del cuerpo para el nacimiento del bebé también se encuentran los cambios que se producen en el pecho para prepararlo para la lactancia. En estos momentos puede producirse la secreción de calostro a través del pezón que en algunas veces puede incomodar a la embarazada. En el caso de que estas secreciones sean abundantes, puede ser necesario usar discos absorbentes en el sostén para evitar manchar la ropa." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

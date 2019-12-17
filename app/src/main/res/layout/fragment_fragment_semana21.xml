@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana21">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="21 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas están entre 17 y 18 cm y el peso es de 300 gramos.\n\n El sistema digestivo está madurando; el feto se encuentra con una gran actividad moviendo las cuatro extremidades y deglutiendo líquido amniótico, que pasa al estómago y al intestino delgado, que absorbe parte del líquido; el resto pasa al intestino grueso. Este líquido amniótico contiene nutrientes que ayudan al desarrollo del bebé, tanto del sistema digestivo como del sistema respiratorio. El grado de desarrollo de los intestinos permite absorber pequeñas cantidades de nutrientes del líquido que el feto traga. Sin embargo, la mayoría de nutrientes del feto seguirán proviniendo de la placenta. En las niñas, la vagina comienza a formarse y en los niños los testes descienden desde la pelvis al escroto. \n\n Durante este periodo la embarazada suele encontrarse mejor, ya que el organismo se ha adaptado a los cambios hormonales, han desaparecido las típicas molestias del primer trimestre y aún no han aparecido la pesadez y molestias del final del embarazo. El útero va creciendo, y por lo tanto, el abdomen también lo hace con lo que suele notarse ya la barriga de embarazada. En esta semana, también puede notarse la aparición de estrías." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

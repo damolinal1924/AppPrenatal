@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana26">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="26 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="900dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text='Las medidas del feto están sobre los 23 cm. de la cabeza a las nalgas y el peso se encuentra sobre 900 gramos.\n\n El feto tiene ciclos de sueño y vigilia. Estos ciclos tienen una duración mucho menor que los de un niño o un adulto, por lo que una gran parte del día lo pasará dormido y no se moverá pero en otros momentos se activará y la embarazada notará claramente sus movimientos, que suelen ser más intensos y coordinados. Los reflejos están desarrollados y es frecuente que ante un estímulo responda estirando los brazos o las piernas y lo puedas notar a través del abdomen. El sistema nervioso sigue madurando: aumenta su capacidad de controlar la temperatura corporal y aparece progresivamente la capacidad de realizar movimientos respiratorios. Aunque no respire dentro del útero irá practicando para cuando llegue el momento del nacimiento. El feto va acumulando tejido adiposo (grasa) bajo la piel, reduciendo los pliegues y arruguitas de la piel. Esta grasita le ayudará a mantener el calor una vez haya nacido. En estos momentos, el feto ingiere aproximadamente medio litro de líquido amniótico al día para seguir con la maduración del sistema digestivo y respiratorio.\n\n En el pecho, la areola mamaria es cada vez mayor y más oscura y pueden aparecer unos pequeños bultos llamados glándulas de Morgagni, que se encargan de segregar una sustancia para lubricar el pecho durante el embarazo y protegerlo durante la lactancia frente a posibles infecciones. Los movimientos fetales serán ya muy evidentes e incluso pueden ser molestos en algunas ocasiones. Puede que el feto “se queje" si la embarazada se pone en alguna posición concreta y responda estirando las extremidades. El aumento de tamaño del útero hará que aumente la necesidad de orinar, incluso durante la noche. Si ocurre muy frecuentemente es aconsejable reducir la ingesta de líquidos antes de acostarse. Ocasionalmente pueden aparecer contracciones normalmente no dolorosas, las contracciones de Braxton-Hicks.' />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

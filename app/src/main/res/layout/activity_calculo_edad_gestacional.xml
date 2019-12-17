@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CalculoEdadGestacionalActivity">
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="30dp">
+
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Cálculo edad gestacional"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="107dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="-5dp"
+                        android:gravity="top"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:text="Fecha última menstruación" />
+
+                <EditText
+                        android:id="@+id/dtfechamestruacion"
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="date"
+                        android:textAlignment="center" />
+
+                <Button
+                        android:id="@+id/btnfechamestruacion"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_calendar"
+                        android:paddingStart="5dp" />
+
+            </TableRow>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="124dp">
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp">
+
+                    <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="Edad gestacional:"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/txtSemanaGestacion"
+                            android:layout_width="251dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp">
+
+                    <TextView
+                            android:id="@+id/textView122"
+                            android:layout_width="165dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="Fecha pobable del parto:"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/txtFechaProbableParto"
+                            android:layout_width="205dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp" />
+
+                </TableRow>
+
+            </LinearLayout>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

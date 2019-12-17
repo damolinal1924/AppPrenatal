@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana27">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="27 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 24 cm de la cabeza a las nalgas (34 cm de la cabeza a los pies) y el peso se encuentra por encima de 1 kg.\n\n Es posible que la embarazada note las llamadas contracciones de Braxton Hicks. Aunque hay mujeres que no pasan por ello, estas contracciones (que reciben el nombre del primer médico en describirlas) son encogimientos del útero que empiezan a partir de la sexta semana del embarazo. Se trata de contracciones uterinas fisiológicas, que van preparando el útero para el momento del parto. Habitualmente la gestante las nota como un endurecimiento del abdomen, pero totalmente indoloro. En caso que sean muy regulares o dolorosas, sería recomendable consultar con un médico ya que la gestante podría estar de parto antes de tiempo. A esta edad gestacional, el feto está lo suficientemente desarrollado para que pueda nacer. Sin embargo las complicaciones graves todavía son posibles, y necesitaría estar unas semanas bajo control y en la incubadora." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

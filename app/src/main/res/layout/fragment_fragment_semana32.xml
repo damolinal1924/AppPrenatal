@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana32">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="32 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="650dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 42 cm de la cabeza a los pies y el peso se encuentra sobre 1.900 gramos.\n\n En estos momentos el feto tiene un apariencia muy similar a la que presentará al nacer, solo que un poco más pequeño. La mayoría de fetos ya poseen cabello en esta fase, pero otros, sólo tienen un vello muy fino. De igual manera, las uñas han ido creciendo lentamente desde el momento de su formación y en estos momentos, las uñas llegan a las puntas de los dedos. Por este motivo, es normal tener que cortárselas al poco de nacer para evitar que se arañen cuando se tocan la cara. Los movimientos fetales permiten a la madre saber cuál es la posición del feto ya que las extremidades se sienten como movimientos enérgicos y rápidos y el tronco y las nalgas como movimientos más mantenidos.\n\n En este momento del embarazo es muy habitual la aparición de hemorroides, que son una dilatación de las venas que se encuentra a nivel del recto. Esta dilatación se produce por varios motivos. El primero es por la disminución del retorno venoso desde la parte inferior del cuerpo debido a la presión que ejerce el útero sobre las venas de esta zona junto con la dilatación de los vasos que se produce sobretodo en la parte final de embarazo." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

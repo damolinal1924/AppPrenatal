@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana39">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="39 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 48 cm de talla y unos 3.200 o 3.300 gramos de peso.\n\n El momento del parto está muy cerca y el bebé sigue creciendo y aumentando principalmente la capa de grasa que se encuentra por debajo de la piel. Esta grasa le permitirá regular correctamente su temperatura corporal una vez haya nacido. Los pulmones y el cerebro son las estructuras fetales que incluso en este momento de la gestación siguen madurando. La posición que presenta el feto muy probablemente será la definitiva en el momento del parto y cada vez se notan los movimientos fetales de forma más intensa.\n\n La embarazada habrá aumentado desde el inicio de la gestación unos 11-15 Kg. El acortamiento cervical puede iniciarse en estas semanas. Éste es el proceso por el cual el cuello del útero o cérvix se prepara para el parto, es decir se va acortando y comienza a dilatar reblandeciéndose progresivamente." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

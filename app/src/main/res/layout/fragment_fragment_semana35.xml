@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana35">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="35 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="950dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 46 cm de la cabeza a los pies y el peso se encuentra sobre 2.500 gramos.\n\n En este periodo la piel del feto se va alisando ya que se empieza a depositar la grasa y el lanugo empieza a caer lentamente. En estas semanas de gestación la prematuridad se considera leve, de modo que si el parto se desencadena generalmente se deja evolucionar.\n\n En las últimas semanas de la gestación, la madre pasa al feto inmunidad temporal contra enfermedades propias de la infancia, por lo que el recién nacido estará protegido hasta la administración de las primeras vacunas. Es importante recordar que es muy recomendable la vacunación contra la gripe a lo largo de toda la gestación. Asimismo, también está recomendada la vacunación contra la tos ferina (conjuntamente con la vacuna del tétanos: dTpa) a todas las gestantes. La vacuna de la tos ferina se administra preferentemente entre las 27 y 36 semanas, independientemente del tiempo transcurrido desde la última dosis de tétanos ya que la vacunación protege al recién nacido de la tos ferina, infección respiratoria que puede ser potencialmente grave en los primeros meses de vida.\n\n A estas alturas, se puede notar una “sensación de peso” en la zona de la pelvis ya que el feto se empieza a acomodar en ella, hecho que puede provocar molestias y calambres a nivel de la vagina. Esta misma presión, también se ejerce sobre la vejiga, por lo que es posible que aumente la frecuencia con la que la gestante va a orinar. Es una sensación muy similar a la que la gestante experimentó en las primeras semanas de gestación. En el abdomen también es frecuente ver como sobresale el ombligo por el aumento progresivo de la barriga. Es normal que aparezcan las contracciones de Braxton Hicks, en las que el abdomen se pone duro de forma irregular y no suelen ser dolorosas. También se acentúan síntomas digestivos como acidez o ardor de estómago." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

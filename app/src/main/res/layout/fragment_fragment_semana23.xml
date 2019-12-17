@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana23">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="23 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="680dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas están entre 20 y 21 cm y pesa unos 450 g.\n\n Se empieza a depositar el pigmento que colorea la piel; actualmente esta piel es delgada y con muchas arrugas, que se irán alisando progresivamente. Así pues, el bebé nacerá con cierta pigmentación en su piel, pero no adquirirá su color definitivo hasta el final del primer año de vida. Sin embargo, el iris aún no está pigmentado. Por lo tanto, todavía no se sabe qué color tendrán los ojos del futuro bebé. Los huesos siguen su transformación progresivamente pasando de cartílago a hueso. Se trata de un proceso de calcificación que se inicia en el centro del hueso y progresa hacia los extremos, y que seguirá una vez haya nacido el bebé. De hecho, durará hasta varios años después.\n\n En estas semanas, los movimientos del feto se notan diariamente, a pesar que es posible que el resto de personas aún no lo noten poniendo la mano encima del abdomen de la embarazada. También es posible que la gestante note picor en la piel de la zona, debido a la tirantez que se produce por el crecimiento de la barriga; es importante hidratar bien la zona con cremas hidratantes para disminuir las molestias y la aparición de estrías. Aunque no es tan evidente, la presión sanguínea ha aumentado en esta semana hasta retomar los valores previos al embarazo." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

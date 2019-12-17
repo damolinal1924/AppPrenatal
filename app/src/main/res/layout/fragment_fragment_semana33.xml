@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana33">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="33 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="700dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 43-44 cm de la cabeza a los pies y el peso se encuentra sobre 2.100 gramos.\n\n A estas alturas del embarazo, el feto suele estar colocado en posición cefálica, es decir con al cabeza hacia abajo, preparado para el momento del parto. A pesar de que cada vez dispone de menos espacio para moverse o girarse, todavía es posible que se gire de forma espontánea. A lo largo de estas últimas semanas de gestación, el cerebro del feto ha continuado con su proceso de maduración gracias al aumento del número de neuronas, las células que forman nuestro cerebro, y de las conexiones que se crean entre ellas. La aparición de esta conexiones es un proceso clave en la formación y maduración del cerebro y se produce desde etapas muy precoces, sin embrago su máxima actividad se produce al final de la gestación y en las primeras etapas de la infancia.\n\n El dolor lumbar en estos momentos del embarazo también se puede intensificar, e incluso irradiar a la nalga, el muslo y la pierna; es la llamada ciática y se produce por la compresión del nervio ciático debido a que se acentúa la lordosis o curva lumbar por el cambio en el centro de gravedad. Este síntoma es relativamente frecuente y podemos evitar su aparición con la práctica regular de ejercicio y/o yoga. Una vez está presente, podemos aliviarlo con calor local o acetaminofen." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

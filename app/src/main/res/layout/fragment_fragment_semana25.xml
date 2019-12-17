@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana25">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="25 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="680dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 22 cm de la cabeza a las nalgas y el peso se encuentra sobre 800 gramos.\n\n A partir de estas semanas, los párpados del feto se empiezan a abrir y cerrar, y ya tienen pestañas. En cambio, el color de los ojos, a pesar que ya está determinado genéticamente desde el inicio no se definirá hasta un tiempo después del nacimiento ya que ciertos pigmentos necesitan luz para acabar de formarse. En este periodo del embarazo el sentido del oído es el que más se desarrolla ya que las ondas sonoras se desplazan por el líquido amniótico, llegando al feto por lo que empieza a escuchar los primeros sonidos, sobre todo aquellos más próximos, es decir los que provienen del cuerpo de la madre. En estas semanas, el feto es muy activo.\n\n El embarazo ya es evidente, por lo que la embarazada debe llevar ropa holgada. Es frecuente presentar reflujo o ardores, debido a la disminución de la presión gastrointestinal ocasionada por el aumento de la progesterona y por la compresión del útero sobre el estómago. También son frecuentes los gases, tanto por la disminución de movimiento de las asas intestinales como por la compresión del útero sobre el intestino, por lo que es recomendable evitar bebidas gaseosas, descansar después de cada comida en posición semisentada y realizar la última comida 2 horas antes de acostarse." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana24">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="24 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="680dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas están entre 21 y 22 cm y pesa unos 700 g.\n\n En estos momentos el peso depende también del sexo del feto, por lo que los niños suelen tener pesos algo superiores a las niñas. En estas semanas la mayoría de órganos sensoriales del feto están maduros (tacto, olfato, oído y papilas gustativas) por lo que con la llegada de estímulos del exterior el feto empieza a interactuar. A través del líquido amniótico el feto se familiariza con olores y sabores . En cambio, debido a la oscuridad que existe en el interior del útero, el feto no es capaz de ver. Además, a causa del espacio que tiene aún en el saco amniótico, el feto cambia de posición varias veces en un día. En esta semana de embarazo se alcanza una etapa muy importante: la viabilidad fetal . A partir de estas semanas se empieza a producir en los pulmones el surfactante pulmonar una sustancia que ayuda al intercambio de oxigeno en los pulmones.\n\n La anemia es frecuente durante el embarazo y, sobre todo, a partir del segundo trimestre. Los síntomas de la anemia son el mareo, el cansancio, la palidez en la piel y en las mucosas, en ocasiones se pueden experimentar palpitaciones. En las analíticas que se realizan a lo largo del embarazo se puede diagnosticar la anemia gracias al nivel de hemoglobina. En el caso que se diagnostique una anemia durante el embarazo, se recomienda la toma de suplementos de hierro y aumentar el consumo de alimentos ricos en hierro." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -22,16 +22,8 @@
                     android:layout_height="wrap_content"
                     android:paddingStart="20dp"
                     android:paddingTop="15dp"
-                    android:text="4 semana - día 1"
+                    android:text="4 semanas"
                     android:textStyle="bold" />
-
-            <TextView
-                    android:id="@+id/txtfechasem1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="20dp"
-                    android:text="Jueves, 23 marzo, 2019"
-                    android:textSize="12sp" />
 
             <ImageView
                     android:id="@+id/imgtrimsem1"

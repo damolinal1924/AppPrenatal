@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana34">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="34 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="750dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 45 cm de la cabeza a los pies y el peso se encuentra sobre 2.300 gramos.\n\n En estos momentos, los pulmones del feto prácticamente han completado su proceso de maduración. Sin embargo, en algunos casos la producción de surfactante pulmonar no es suficiente para asegurar un buen funcionamiento de los pulmones por lo que en el caso de tener una amenaza de parto prematuro o de que se necesite acabar el embarazo por algún motivo, deberíamos administrar corticoides para reducir el riesgo de problemas respiratorios. A partir de este momento, si se produjera el parto las probabilidades de supervivencia son casi del 100%. El feto cada vez es más parecido a un bebé, la piel está menos arrugada debido a la acumulación de depósitos de grasa. Con frecuencia la madre puede sentir movimientos rápidos y rítmicos que duran unos minutos y corresponden a fases de hipo. Además, el feto empieza a reconocer sus extremidades y en algunas ocasiones puede chuparse el dedo.\n\n En estos momento, el útero ya ha crecido mucho y llega unos 30 cm por encima del pubis, por lo que todos los órganos abdominales se desplazan hacia arriba provocando incomodidad a la embarazada y también puede hacer que la respiración sea más dificultosa, con respiraciones rápidas, cortas y superficiales. Además, el estiramiento de la piel puede producir picores y estrías, sobretodo si la piel no se encuentra correctamente hidratada." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

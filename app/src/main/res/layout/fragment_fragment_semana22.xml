@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana22">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="22 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="850dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Mide entre 19 y 20 cm y su peso es de 350 gramos.\n\n A nivel de la cara ya están formados los párpados y las cejas, aunque aún faltan las pestañas y además, aún los párpados están fusionados por lo que el feto no puede abrir los ojos. Los labios se delimitan muy bien, y dentro de las encías se están empezando a formar los dientes. En estas semanas, el sistema límbico está en pleno desarrollo; esta estructura que está en el cerebro será la encargada de controlar las emociones y los sentimientos. El hígado empieza a funcionar hacia la semana 10 del embarazo. Pero su capacidad para metabolizar la bilirrubina y producir bilis (la encargada de digerir los alimentos) no comienza hasta un poco antes del nacimiento. Por eso, los niños prematuros tienen más predisposición a ponerse amarillos (la llamada ictericia), ya que su hígado aún es inmaduro para metabolizar la bilirrubina que se encuentra con niveles aumentados en su sangre. Los testículos de los niños ya tienen algunos espermatozoides y los ovarios de las niñas óvulos en su interior.\n\n El útero ya sobrepasa el ombligo y es normal un aumento de peso de entre 5 y 6 kg. Es habitual sentir molestias a nivel del pubis y del abdomen debido al crecimiento del útero; también es frecuente el notar como la barriga se pone dura. Esto es debido a que el útero se contrae y relaja de forma habitual; esto es normal que pase de forma esporádica durante el día. Estas contracciones se denominan “contracciones de Braxton-Hicks” y ayudan a la preparación del útero y tejidos de la pelvis para el futuro parto.c v b b—d-4-y._ Los tobillos y muñecas pueden hincharse, sobre todo al final del día, debido a la compresión de las venas por el útero que dificultan el reflujo venoso y a los cambios hormonales del embarazo. Esto puede ocasionar gran pesadez de piernas e incluso hormigueo en pies y manos." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

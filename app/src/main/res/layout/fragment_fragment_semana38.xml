@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana38">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="38 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="700dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 48 cm de la cabeza a los pies y el peso se encuentra sobre los 3.000 y 3.100 gramos.\n\n En esta semana ya podemos afirmar que el feto está preparado para vivir fuera del útero. El riesgo de dificultad respiratoria al nacer es del 3%. Conforme se acerca el momento del parto, se produce un incremento de sus niveles hormonales, que contribuirán a mantener los niveles de presión sanguínea y glucosa después del nacimiento y sus movimientos respiratorios aumentan. A nivel músculo-esquelético, se ha desarrollado el tono muscular, aunque los miembros superiores e inferiores continúan flexionados. La grasa subcutánea aumenta y la piel es lisa y suave, blanquecina o sonrosada. El lanugo y el vérnix caseoso continúan desapareciendo. El cabello es más largo y grueso. Las uñas de las manos sobrepasan la punta de los dedos.\n\n En las últimas semanas de la gestación suelen aumentar las molestias que nota la embarazada. Teniendo en cuenta que en cualquier momento se puede desencadenar el parto, debe estar atenta a las señales que lo indican: contracciones regulares cada 5 o 10 minutos que van aumentando de intensidad a medida que pasa el tiempo, pérdidas de líquido amniótico, un sangrado similar a una menstruación o la disminución de movimientos fetales. En estos casos, se debe consultar al médico para que valore el estado materno y del feto." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

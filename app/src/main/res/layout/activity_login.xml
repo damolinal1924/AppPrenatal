@@ -25,19 +25,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:id="@+id/editText2" android:hint="Correo eléctronico" android:paddingTop="20dp"/>
+                android:id="@+id/txtemail" android:hint="Correo eléctronico" android:paddingTop="20dp"/>
 
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:id="@+id/editText5" android:hint="Contraseña" android:paddingTop="20dp"
+                android:id="@+id/txtcontrasena" android:hint="Contraseña" android:paddingTop="20dp"
         />
         <Button
                 android:text="Iniciar sesión"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/btnIniciarSesion" android:textAllCaps="false"
-        />
+                android:layout_height="wrap_content"
+                android:id="@+id/btnIniciarSesion"
+                android:textAllCaps="false"
+                android:onClick="validarDatos" />
         <TextView
                 android:text="¿Se te olvido tu contraseña?"
                 android:layout_width="match_parent"

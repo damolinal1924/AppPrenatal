@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana28">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="28 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="750dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 35-37 cm de la cabeza a los pies y el peso se encuentra sobre 1.100-1.200 gramos.\n\n El acúmulo progresivo de grasa bajo la piel hace que, a estas alturas, el feto tenga un aspecto más redondeado. El desarrollo del sistema nervioso central continúa y el peso del cerebro aumenta. La superficie del cerebro ya no es lisa sino que consta de surcos e indentaciones. Se establecen patrones de sueño y actividad, que indican el desarrollo de su actividad cerebral. El feto ya es capaz de identificar la voz materna. Además sus ojos ya son sensibles a la luz, aunque la percepción de colores y formas solo se va a completar hasta después del nacimiento. Su sistema de termorregulación madura. Los movimientos fetales son más evidentes ya que son más fuertes y frecuentes. Además, la piel empieza a engrosarse y a protegerse con una sustancia blanquecina denominada vérnix caseosa.\n\n Es frecuente el insomnio, tanto por los cambios hormonales que se van produciendo a lo largo del embarazo como por los movimientos fetales, cada vez más presentes. Los sueños vívidos son frecuentes y pueden agravar el insomnio. Puede aparecer el síndrome de las piernas inquietas que consiste en hormigueo y ganas incontrolables de mover las piernas Recientemente las alteraciones del sueño durante el embarazo se han asociado a un riesgo mayor de complicaciones como hipertensión, restricción del crecimiento y diabetes, por lo tanto es aconsejable discutir con tu medico tus hábitos de sueño." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

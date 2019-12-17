@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana30">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="30 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 39 cm de la cabeza a los pies y el peso se encuentra sobre 1.500 gramos.\n\n El feto a estas semanas empieza a ubicarse en la posición definitiva que tendrá al nacer, que en la mayoría de los casos es con la cabeza hacia abajo a pesar de que puede cambiarla hasta el momento del parto. En algunos caso los fetos se posicionan de nalgas o situación transversa debido a una falta de movilidad por un cordón umbilical corto o enredado en el feto, por la forma del útero materno o simplemente porque se siento mucho mejor en esa posición. En estos momentos, los movimientos del feto ya suelen ser enérgicos, sobre todo cuando realiza movimientos de las extremidades. En el sistema digestivo, el hígado, el estómago y el intestino van asumiendo progresivamente sus funciones. El feto sigue deglutiendo líquido amniótico que pasa a través de todo el sistema haciendo que este trabaje. El sentido de la audición también ha madurado y el bebé empieza a escuchar mejor los sonidos graves (baja frecuencia), como el latido cardiaco materno. Este sonido le acompañará hasta el final del embarazo y cuando sea un bebé tendrá efectos relajantes.\n\n Tan sólo faltan 10 semanas para llegar a la fecha de parto y en el cuerpo de la madre se siguen produciendo cambios importantes. El útero sigue aumentado de tamaño de forma progresiva y en estos momentos ya mide unos 30 cm desde la sínfisis del pubis. A medida que el útero crece, empiezan a producirse algunos cambios en la pelvis, que de forma casi imperceptible va incrementando su diámetro en su proceso de preparación para el momento del parto. Los movimientos del feto empiezan a ser molestos en algunas ocasiones, sobre todo cuando se trata de patadas dirigidas a la parte alta del abdomen donde se localiza el hígado y el diafragma. Incluso cuando el bebé está de nalgas, las patadas enérgicas a la parta baje del abdomen son molestas ya que suelen dirigirse a le vejiga. Debido al aumento de volumen del útero, en estos momentos acostumbran a aparecer ardores, gases y otras molestias abdominales (Acidez o ardor de estómago durante el embarazo; Molestias o dolores leves abdominales durante el embarazo), por lo que a partir de esta semana conviene elegir bien lo que se come." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

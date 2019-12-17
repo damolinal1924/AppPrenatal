@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana20">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="20 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="580dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están entre 15 y 16 cm y pesa 260 gramos.\n\n En la semana 20, los principales órganos del feto ya se han desarrollado, y ya puede valorarse por ecografía que la anatomía del bebé sea correcta. El corazón, riñones, hígado, columna, genitales e intestino ya tienen su forma casi final y a partir de ahora crecerán en tamaño y madurarán. Una excepción es el cerebro, que aunque ya está muy desarrollado, seguirá completándose su formación hasta el final del embarazo e incluso durante los primeros años de vida del bebé. En la capa más superficial de la piel, la epidermis, empiezan a aparecer los surcos característicos de cada persona en palmas de las manos, dedos y plantas de los pies (huellas digitales).\n\n A las 20 semanas, la mayoría de embarazadas ya notan los movimientos del feto. El útero se encuentra a la altura del ombligo. La embarazada se encuentra en la mitad del embarazo y, en estos momentos la respiración se hace más profunda y el ritmo cardíaco se acelera para compensar el sobreesfuerzo que debe hacer el sistema circulatorio de la mamá para bombear su sangre y la del feto. En esta etapa también es habitual sentirse cansada y con mucho sueño." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

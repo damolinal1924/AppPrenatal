@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana40">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="40 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="650dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están entre los 48 y 50 cm de la cabeza a los pies y el peso se encuentra sobre los 3.400 gramos.\n\n La mayor parte de vérmix caseoso ha desaparecido, aunque aún quedan restos sobre todo en los pliegues. La embarazada debe seguir notando las patadas, aunque es normal que se note menos dado que el bebé cada vez dispone de menos espacio para moverse. En caso de no notar al feto en una hora es recomendable estimularlo mediante pequeños movimientos en el abdomen y tomando algún alimento azucarado (zumo, chocolate, galletas). En caso de que el feto no se mueva o se mueva menos de lo habitual, se debería consultar con el médico para valorar su bienestar.\n\n Teniendo en cuenta que en cualquier momento se puede desencadenar el parto, se debe estar atento a las señales que lo indican para consultar a urgencias, entre ellas, las contracciones regulares cada 5 o 10 minutos que van aumentando de intensidad a medida que pasa el tiempo, pérdidas de líquido amniótico, un sangrado similar a una menstruación o la disminución de movimientos fetales. En estos casos, se debe consultar al médico para que valore el estado materno y también el del feto." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

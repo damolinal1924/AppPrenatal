@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSemana37">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/txtsemana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:text="37 semanas"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/imgtrimsem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/embarazada_vacunas" />
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="El desarrollo de tu bebé"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="800dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Las medidas del feto están sobre los 48 cm de la cabeza a los pies y pesa unos 2.900 gramos.\n\n A partir de la semana 37, el recién nacido ya se considera un bebé a término.\n\n El cuello del útero suele iniciar su maduración semanas antes del parto, por lo que en ocasiones se pueden presentar pequeñas manchas de sangre y/o expulsión del tapón mucoso, una secreción pegajosa marrón o transparente. Desde que se expulsa el tapón mucoso hasta que se produce el parto pueden pasar desde horas hasta semanas. La expulsión del tapón mucoso se considera algo fisiológico en el proceso del embarazo. Sin embargo, si el sangrado fuese igual o superior a la menstruación, la gestante debe consultar a su médico de referencia. Otros signos de alarma que requieren la valoración médica serían el inicio de contracciones uterinas regulares (por ejemplo, contracciones cada 3 o 5 minutos durante 60 minutos), la rotura de la bolsa amniótica o la disminución o ausencia de movimientos fetales.\n\n En concreto, los movimientos fetales son uno de los primeros signos de viabilidad fetal. Suelen detectarse por la gestante a partir de las 18 semanas. Traducen una situación de bienestar fetal. A partir de las 34 semanas, pueden disminuir ligeramente sin estar indicando un problema fetal, ya que a medida que el feto crece tiene menos espacio en el útero y sus movimientos se hacen más limitados y definidos. La ausencia aguda de movimientos fetales durante más de 2 horas en una gestante que anteriormente los percibía, así como la percepción subjetiva de una disminución respecto al patrón habitual de movimientos fetales durante más de 12 horas, requieren una consulta con el médico." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
