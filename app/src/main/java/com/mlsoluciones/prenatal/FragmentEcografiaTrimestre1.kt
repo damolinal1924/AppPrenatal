@@ -24,6 +24,11 @@ class FragmentEcografiaTrimestre1 : Fragment() {
             startActivity(intent)
         }
 
+        view.btnDoopleArteria.setOnClickListener {
+            val intent = Intent(activity, ActivitySubirEcografiaDopplerArteriaUterinas::class.java)
+            startActivity(intent)
+        }
+
         return view
 
     }

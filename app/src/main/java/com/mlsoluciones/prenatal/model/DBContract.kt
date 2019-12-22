@@ -28,19 +28,12 @@ object DBContract {
         companion object {
             val TABLE_NAME = "texamen"
             val COLUMN_ID_EXAM = "idexam"
+            val COLUMN_CODIGO = "codigo"
             val COLUMN_NOMBRE_EXAMEN = "nombreExamen"
             val COLUMN_NUM_TRIMESTRE = "numTrimestre"
             val COLUMN_TIPO_EXAMEN = "tipoExamen"
-            val COLUMN_EXAMEN = "examen"
-        }
-    }
-
-    /* Clase interna que define el contenido de la tabla texamen. */
-    class ImagenEntry : BaseColumns {
-        companion object {
-            val TABLE_NAME = "timagen"
-            val COLUMN_IMG_NOMBRE = "image_name"
-            val COLUMN_IMG_DATA = "image_data"
+            val COLUMN_EXAMEN_OPCIONAL = "examenOpcional"
+            val COLUMN_IMG_EXAMEN = "imgExamen"
         }
     }
 }

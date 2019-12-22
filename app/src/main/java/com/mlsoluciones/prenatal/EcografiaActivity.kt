@@ -23,6 +23,8 @@ class EcografiaActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.navigation_home -> {
                 textMessage.setText("")
+                val intento1 = Intent(this, ActivityHome2::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_ecografia -> {
@@ -35,10 +37,14 @@ class EcografiaActivity : AppCompatActivity() {
             }
             R.id.navigation_examenes -> {
                 textMessage.setText("")
+                val intento1 = Intent(this, ActivityExamenes::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_perfil -> {
                 textMessage.setText("")
+                val intento1 = Intent(this, ActivityPerfil::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -71,6 +77,11 @@ class EcografiaActivity : AppCompatActivity() {
 
         // Se selecciona opcion por defecto del BottomNavigationView
         nav_view_ecografia.getMenu().getItem(1).setChecked(true)
+
+        // agrega el icono de ir atras del menu actionBar
+        var actionbar = supportActionBar
+        actionbar!!.setDisplayHomeAsUpEnabled(true)
+        actionbar!!.setDisplayShowHomeEnabled(true)
 
     }
 
@@ -128,9 +139,10 @@ class EcografiaActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-    fun clickButton(v: View){
-        val intento1 = Intent(this, ActivitySubirEccobtreticaTransvaginal::class.java)
-        startActivity(intento1)
+    // metodo que realiza el ir atras del actionBar
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
     }
 
 }

@@ -11,18 +11,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="16dp">
+            tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="134dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/embarazada_vacunas">
+                    android:background="@drawable/embarazada_vacunas"
+                    android:orientation="vertical">
 
             </LinearLayout>
 
@@ -33,48 +33,49 @@
                     android:paddingStart="20dp"
                     android:paddingTop="10dp"
                     android:text="Ecoobtretica transvaginal"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
-            <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+            <!--ImageView in which image will be set-->
 
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="83dp"
-                    android:orientation="horizontal">
+            <!--Button to open camera-->
 
-                <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="139dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingStart="20dp"
-                        android:text="Adjuntar examen:"
-                        android:textStyle="bold" />
+            <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:alpha="0.1"
+                    android:src="@drawable/ic_capturar_examen_24dp" />
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
 
                 <Button
-                        android:id="@+id/button"
-                        android:layout_width="146dp"
-                        android:layout_height="35dp"
+                        android:id="@+id/btnCapturarExamen"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:drawableLeft="@drawable/ic_add"
-                        android:text="Adjuntar imagen"
-                        android:textAlignment="center"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:drawableLeft="@drawable/ic_capturar_examen_24dp"
+                        android:text="Capturar examen"
+                        android:textAllCaps="false" />
+
+                <Button
+                        android:id="@+id/btnGuardarExamen"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="40dp"
+                        android:drawableLeft="@drawable/ic_guardar_examen_24dp"
+                        android:text="Guardar Examen"
                         android:textAllCaps="false"
-                        android:textSize="12sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="MissingConstraints"
-                        style="@style/Widget.AppCompat.Button"/>
-            </LinearLayout>
+                        android:onClick="addImagen"/>
+            </TableRow>
 
         </LinearLayout>
     </ScrollView>

@@ -12,22 +12,150 @@ import java.util.ArrayList
 class UsersDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
     override fun onCreate(db: SQLiteDatabase) {
         db.execSQL(SQL_CREATE_TUSUARIO)
-        //db.execSQL(SQL_CREATE_TEXAMEN)
-        //db.execSQL(SQL_CREATE_TIMAGEN)
-        //insertTexamen(db)
+        db.execSQL(SQL_CREATE_TEXAMEN)
+        insertTexamen(db)
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         // This database is only a cache for online data, so its upgrade policy is
         // to simply to discard the data and start over
         db.execSQL(SQL_DELETE_TUSUARIO)
-        //db.execSQL(SQL_DELETE_TEXAMEN)
+        db.execSQL(SQL_DELETE_TEXAMEN)
         //db.execSQL(SQL_DELETE_TIMAGEN)
         onCreate(db)
     }
 
     override fun onDowngrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         onUpgrade(db, oldVersion, newVersion)
+    }
+
+    fun insertTexamen(db: SQLiteDatabase) {
+        // tipoExamen = 1:Ecografias 2:Paraclinicos 3:Vacunas
+        // examenOpcional = 0: no 1: si
+
+        db.execSQL("INSERT INTO texamen (codigo, nombreExamen, numTrimestre, tipoExamen, examenOpcional, imgExamen) VALUES" +
+                "('EXAMEN1', 'Translucencia nucal', 1, 1, 0, null), " +
+                "('EXAMEN2', 'Doppler de arterias uterinas', 1, 1, 0, null)," +
+                "('EXAMEN3', 'Ecoobtretica transvaginal', 1, 1, 0, null)," +
+                "('EXAMEN4', 'Hemograma', 1, 2, 0, null)," +
+                "('EXAMEN5', 'hemoclasificacion', 1, 2, 0, null)," +
+                "('EXAMEN6', 'citologia', 1, 2, 0, null)," +
+                "('EXAMEN7', 'frotis vaginal', 1, 2, 0, null)," +
+                "('EXAMEN8', 'uorianalisis', 1, 2, 0, null)," +
+                "('EXAMEN9', 'urocultivo', 1, 2, 0, null)," +
+                "('EXAMEN10', 'vih', 1, 2, 0, null)," +
+                "('EXAMEN11', 'toxoplasma igG igM', 1, 2, 0, null)," +
+                "('EXAMEN12', 'hepatitis b', 1, 2, 0, null)," +
+                "('EXAMEN13', 'citomegalovirus', 1, 2, 0, null)," +
+                "('EXAMEN14', 'vdrl', 1, 2, 0, null)," +
+                "('EXAMEN15', 'rubeola', 1, 2, 0, null)," +
+                "('EXAMEN16', 'glicemia en ayunas', 1, 2, 0, null)," +
+                "('EXAMEN17', 'influenza', 1, 3, 0, null)," +
+                "('EXAMEN18', 'tetano', 1, 3, 0, null)," +
+                "('EXAMEN19', 'ecografia obstetrica transabdominal de detalle anatomico', 2, 1, 0, null)," +
+                "('EXAMEN20', 'vih', 2, 2, 0, null)," +
+                "('EXAMEN21', 'toxoplasma igG igM', 2, 2, 0, null)," +
+                "('EXAMEN22', 'hepatitis b', 2, 2, 0, null)," +
+                "('EXAMEN23', 'citomegalovirus', 2, 2, 0, null)," +
+                "('EXAMEN24', 'vdrl', 2, 2, 0, null)," +
+                "('EXAMEN25', 'curva de tolerancia a la glucosa con carga de 75 mg entre las 24 a las 28 semanas', 2, 2, 0, null)," +
+                "('EXAMEN26', 'coombs indirecto', 2, 2, 1, null)," +
+                "('EXAMEN27', 'urocultivo', 2, 2, 1, null)," +
+                "('EXAMEN28', 'uroanalisis', 2, 2, 1, null)," +
+                "('EXAMEN29', 'hemograma', 2, 2, 0, null)," +
+                "('EXAMEN30', 'tetano', 2, 3, 0, null)," +
+                "('EXAMEN31', 'inmunoglobulina anti D', 2, 3, 1, null)," +
+                "('EXAMEN32', 'ecografia obstetrica transabdominal', 3, 1, 0, null)," +
+                "('EXAMEN33', 'perfil biofisico', 3, 1, 1, null)," +
+                "('EXAMEN34', 'doppler de evaluacion de circulacion fetoplacentaria', 3, 1, 1, null)," +
+                "('EXAMEN35', 'doppler de de circulación feto - placentaria', 3, 1, 1, null)," +
+                "('EXAMEN36', 'hemograma', 3, 2, 0, null)," +
+                "('EXAMEN37', 'vih', 3, 2, 0, null)," +
+                "('EXAMEN38', 'toxoplasma igG igM', 3, 2, 0, null)," +
+                "('EXAMEN39', 'hepatitis b', 3, 2, 0, null)," +
+                "('EXAMEN40', 'citomegalovirus', 3, 2, 0, null)," +
+                "('EXAMEN41', 'vdrl', 3, 2, 0, null)," +
+                "('EXAMEN42', 'cultivo recto vaginal', 3, 2, 0, null)," +
+                "('EXAMEN43', 'urocultivo', 3, 2, 1, null)," +
+                "('EXAMEN44', 'uroanalisis', 3, 2, 1, null) ")
+    }
+
+    @Throws(SQLiteConstraintException::class)
+    fun updateImgExamen(codigo: String, imgExamen: ByteArray): Boolean {
+        // Obtiene el repositorio de datos en modo de escritura
+        val db = writableDatabase
+        // Define 'where' part of query.
+        val selection = DBContract.ExamenEntry.COLUMN_CODIGO + "='" + codigo + "'"
+
+        val values = ContentValues()
+        values.put(DBContract.ExamenEntry.COLUMN_IMG_EXAMEN, imgExamen)
+        // Issue SQL statement.
+        db.update(DBContract.ExamenEntry.TABLE_NAME, values, selection, null)
+
+        return true
+    }
+
+    fun selImgExamen(codigo: String): ByteArray? {
+        val db = writableDatabase
+
+        var cursor: Cursor? = null
+        try {
+            cursor = db.rawQuery("SELECT * FROM " + DBContract.ExamenEntry.TABLE_NAME + " WHERE " + DBContract.ExamenEntry.COLUMN_CODIGO + "='" + codigo + "'", null)
+
+        } catch (e: SQLiteException) {
+            db.execSQL(SQL_CREATE_TEXAMEN)
+            return null
+        }
+
+        var imgExamen: ByteArray? = null
+
+        if (cursor!!.moveToFirst()) {
+            while (cursor.isAfterLast == false) {
+                if(cursor.getBlob(cursor.getColumnIndex(DBContract.ExamenEntry.COLUMN_IMG_EXAMEN)) != null) {
+                    imgExamen = cursor.getBlob(cursor.getColumnIndex(DBContract.ExamenEntry.COLUMN_IMG_EXAMEN))
+                }
+                cursor.moveToNext()
+            }
+        }
+        return imgExamen
+    }
+
+    fun selTexamenById(codigo: String): ArrayList<ExamenModel> {
+        val examens = ArrayList<ExamenModel>()
+        val db = writableDatabase
+        var cursor: Cursor? = null
+        try {
+            cursor = db.rawQuery("SELECT * FROM " + DBContract.ExamenEntry.TABLE_NAME , null)
+        } catch (e: SQLiteException) {
+            db.execSQL(SQL_CREATE_TEXAMEN)
+            return ArrayList()
+        }
+
+        var idexam: Int
+        var codigo: String
+        var nombreExamen: String
+        var numTrimestre: Int
+        var tipoExamen: Int
+        var examenOpcional: Int
+        var imgExamen: ByteArray? = null
+
+        if (cursor!!.moveToFirst()) {
+            while (cursor.isAfterLast == false) {
+                idexam = cursor.getInt(cursor.getColumnIndex(DBContract.ExamenEntry.COLUMN_ID_EXAM))
+                codigo = cursor.getString(cursor.getColumnIndex(DBContract.ExamenEntry.COLUMN_CODIGO))
+                nombreExamen = cursor.getString(cursor.getColumnIndex(DBContract.ExamenEntry.COLUMN_NOMBRE_EXAMEN))
+                numTrimestre = cursor.getInt(cursor.getColumnIndex(DBContract.ExamenEntry.COLUMN_NUM_TRIMESTRE))
+                tipoExamen = cursor.getInt(cursor.getColumnIndex(DBContract.ExamenEntry.COLUMN_TIPO_EXAMEN))
+                examenOpcional = cursor.getInt(cursor.getColumnIndex(DBContract.ExamenEntry.COLUMN_EXAMEN_OPCIONAL))
+                if(cursor.getColumnIndex(DBContract.ExamenEntry.COLUMN_IMG_EXAMEN) != null) {
+                    imgExamen = cursor.getBlob(cursor.getColumnIndex(DBContract.ExamenEntry.COLUMN_IMG_EXAMEN))
+                }
+
+                examens.add(ExamenModel(idexam, codigo, nombreExamen, numTrimestre, tipoExamen, examenOpcional, imgExamen))
+                cursor.moveToNext()
+            }
+        }
+        return examens
     }
 
     @Throws(SQLiteConstraintException::class)
@@ -145,10 +273,12 @@ class UsersDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         private val SQL_CREATE_TEXAMEN =
             "CREATE TABLE " + DBContract.ExamenEntry.TABLE_NAME + " (" +
                     DBContract.ExamenEntry.COLUMN_ID_EXAM + " INTEGER PRIMARY KEY autoincrement," +
+                    DBContract.ExamenEntry.COLUMN_CODIGO + " TEXT," +
                     DBContract.ExamenEntry.COLUMN_NOMBRE_EXAMEN + " TEXT," +
                     DBContract.ExamenEntry.COLUMN_NUM_TRIMESTRE + " INTEGER," +
                     DBContract.ExamenEntry.COLUMN_TIPO_EXAMEN + " INTEGER," +
-                    DBContract.ExamenEntry.COLUMN_EXAMEN + " INTEGER)"
+                    DBContract.ExamenEntry.COLUMN_EXAMEN_OPCIONAL + " INTEGER, " +
+                    DBContract.ExamenEntry.COLUMN_IMG_EXAMEN + " BLOB)"
 
         private val SQL_DELETE_TEXAMEN = "DROP TABLE IF EXISTS " + DBContract.ExamenEntry.TABLE_NAME
 

@@ -35,7 +35,7 @@
                     android:text="Ecoobtretica transvaginal"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
                     android:id="@+id/btnEcoTranslucenciaNucal"
@@ -51,7 +51,7 @@
                     android:text="Ecografía de translucencia nucal"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
                     android:id="@+id/btnDoopleArteria"
@@ -67,7 +67,7 @@
                     android:text="Doppler de arterias uterinas"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
         </LinearLayout>
     </ScrollView>

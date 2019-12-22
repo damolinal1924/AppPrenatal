@@ -242,10 +242,8 @@ class ActivityHome2 : AppCompatActivity() {
 
         // agrega el icono de ir atras del menu actionBar
          var actionbar = supportActionBar
-        actionbar!!.title = "Prenatal"
-
-        actionbar.setDisplayHomeAsUpEnabled(true)
-        actionbar.setDisplayShowHomeEnabled(true)
+        actionbar!!.setDisplayHomeAsUpEnabled(true)
+        actionbar!!.setDisplayShowHomeEnabled(true)
 
     }
 
@@ -267,9 +265,9 @@ class ActivityHome2 : AppCompatActivity() {
         textNotification_badge = actionView.findViewById(R.id.notification_badge) as TextView
 
         // se quita el badge de notificacion cuando no exista nada que notificar
-        textNotification_badge!!.setText("");
+        textNotification_badge!!.setText("")
         Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
-        textNotification_badge!!.setBackgroundResource(android.R.color.transparent);
+        textNotification_badge!!.setBackgroundResource(android.R.color.transparent)
 
         // se muestra el badge de notificacion cuando exista que notificar
         //textNotification_badge!!.setText("58");
@@ -291,20 +289,13 @@ class ActivityHome2 : AppCompatActivity() {
             Toast.makeText(this, "Se presionó el ícono de notificación 1", Toast.LENGTH_LONG).show()
             return true
         }
-        if (id == R.id.notification_badge) {
-            Toast.makeText(this, "Se presionó el ícono de notificación 2", Toast.LENGTH_LONG).show()
+        if (id == R.id.btnMenuCerrarSesion) {
+            val intento1 = Intent(this, ActivityLogin::class.java)
+            startActivity(intento1)
             return true
         }
-        if (id == R.id.opcion1) {
-            Toast.makeText(this, "Se presionó la opción 1 del menú", Toast.LENGTH_LONG).show()
-            return true
-        }
-        if (id == R.id.opcion2) {
-            Toast.makeText(this, "Se presionó la opción 2 del menú", Toast.LENGTH_LONG).show()
-            return true
-        }
-        if (id == R.id.opcion3) {
-            Toast.makeText(this, "Se presionó la opción 3 del menú", Toast.LENGTH_LONG).show()
+        if (id == R.id.menuSignoAlarma) {
+            Toast.makeText(this, "Se presionó el ícono de signo de alarma", Toast.LENGTH_LONG).show()
             return true
         }
         return super.onOptionsItemSelected(item)

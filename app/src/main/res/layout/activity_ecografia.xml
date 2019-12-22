@@ -22,7 +22,7 @@
                 android:paddingStart="30dp"
                 android:paddingTop="70dp"
                 android:text="Ecografias"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:shadowColor="@color/colorPrimary" />

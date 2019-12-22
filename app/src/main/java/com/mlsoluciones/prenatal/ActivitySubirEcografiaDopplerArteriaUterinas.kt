@@ -25,7 +25,7 @@ import com.mlsoluciones.prenatal.model.UsersDBHelper
 import kotlinx.android.synthetic.main.activity_subir_eccobtretica_transvaginal.*
 import java.io.ByteArrayOutputStream
 
-class ActivitySubirEcografiaTranslucenciaNucal : AppCompatActivity() {
+class ActivitySubirEcografiaDopplerArteriaUterinas : AppCompatActivity() {
 
     lateinit var usersDBHelper : UsersDBHelper
 
@@ -58,7 +58,7 @@ class ActivitySubirEcografiaTranslucenciaNucal : AppCompatActivity() {
 
     var textNotification_badge: TextView? = null
 
-    private val PERMISSION_CODE = 1000;
+    private val PERMISSION_CODE = 1000
     private val IMAGE_CAPTURE_CODE = 101
     var image_uri: Uri? = null
 
@@ -66,13 +66,13 @@ class ActivitySubirEcografiaTranslucenciaNucal : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_subir_ecografia_translucencia_nucal)
+        setContentView(R.layout.activity_subir_ecografia_doppler_arteria_uterinas)
 
         usersDBHelper = UsersDBHelper(this)
 
         selImgExamen()
 
-        val navView: BottomNavigationView = findViewById(R.id.nav_view_subir_ecografia_translucencia_nucal)
+        val navView: BottomNavigationView = findViewById(R.id.nav_view_bottom)
 
         textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
@@ -202,7 +202,7 @@ class ActivitySubirEcografiaTranslucenciaNucal : AppCompatActivity() {
 
     fun addImagen(v: View){
         var imgExamen = imageViewToByte(image_view)
-        var result = usersDBHelper.updateImgExamen("EXAMEN1", imgExamen)
+        var result = usersDBHelper.updateImgExamen("EXAMEN2", imgExamen)
 
         Toast.makeText(this, "Resultado " + result, Toast.LENGTH_LONG).show()
 
@@ -217,7 +217,7 @@ class ActivitySubirEcografiaTranslucenciaNucal : AppCompatActivity() {
     @SuppressLint("Range")
     fun selImgExamen() {
 
-        var imagens = usersDBHelper.selImgExamen("EXAMEN1")
+        var imagens = usersDBHelper.selImgExamen("EXAMEN2")
         Toast.makeText(this, "imagen data " + imagens, Toast.LENGTH_LONG).show()
 
         if(imagens != null){

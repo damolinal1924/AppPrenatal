@@ -12,13 +12,9 @@ import android.widget.Toast
 import java.util.*
 import java.text.SimpleDateFormat
 import kotlinx.android.synthetic.main.activity_calculo_edad_gestacional.*
-import java.util.concurrent.TimeUnit
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import java.math.BigDecimal
 import java.math.RoundingMode
-
+import java.util.concurrent.TimeUnit
 
 class CalculoEdadGestacionalActivity : AppCompatActivity() {
 
@@ -76,26 +72,45 @@ class CalculoEdadGestacionalActivity : AppCompatActivity() {
     }
 
     fun calcularEdadGestacional(){
-        var totalSemanas: Float
+        var totalSemanas: Float = 0F
         val dateFormat = SimpleDateFormat("dd/MM/yyyy")
+        val fecha = Date()
+        val fechaActual = Calendar.getInstance()
+        fechaActual.time = fecha
 
-        // se calcula fecha de las 24 primeras semanas mas 2 que se regalan es decir 26
-        val fechaMestruacion = dtfechamestruacion.text.toString().split("/")
-        val mes = fechaMestruacion[1].toInt() + 6
-        val fechaSemenas = fechaMestruacion[0] +"/"+ mes +"/"+ fechaMestruacion[2]
-        val fechaSemenas26Format = dateFormat.format(dateFormat.parse(fechaSemenas))
-        totalSemanas = 26F
+        var fechaMestruacionC = Calendar.getInstance()
+        fechaMestruacionC.time = dateFormat.parse(dtfechamestruacion.text.toString())
 
-        // se calcula una semana mas
-        var fechaSemanasMasUna = fechaSemenas26Format
-        val c = Calendar.getInstance()
-        c.time = dateFormat.parse(fechaSemanasMasUna)
-        c.add(Calendar.DATE, 7)  // se le agrega 1 semana
-        fechaSemanasMasUna = dateFormat.format(c.time)
-        totalSemanas = totalSemanas + 1F
+        while(fechaMestruacionC.before(fechaActual) || fechaMestruacionC.equals(fechaActual)){
 
-        // se calcula la diferencia en dias que hay entre la fecha actual y la fecha de la semana 24
-        val millisAcompletarHastaFechaActual = Calendar.getInstance().timeInMillis - c.getTimeInMillis()
+            fechaMestruacionC.add(Calendar.MONTH, 1)  // se le suma 1 mes
+            //Toast.makeText(this, ""+fechaMestruacionC.time, Toast.LENGTH_LONG).show()
+
+            if(fechaMestruacionC.before(fechaActual) || fechaMestruacionC.equals(fechaActual)) {
+                totalSemanas += 4F
+                if (totalSemanas == 12F || totalSemanas == 25F) {
+                    totalSemanas += 1
+                }
+            }
+        }
+
+        fechaMestruacionC.add(Calendar.MONTH, -1)  // se le resta 1 mes
+        //Toast.makeText(this, ""+fechaMestruacionC.time, Toast.LENGTH_LONG).show()
+
+        while(fechaMestruacionC.before(fechaActual) || fechaMestruacionC.equals(fechaActual)){
+
+            fechaMestruacionC.add(Calendar.DATE, 7)  // se le agrega 7 dias
+            //Toast.makeText(this, ""+fechaMestruacionC.time, Toast.LENGTH_LONG).show()
+            if(fechaMestruacionC.before(fechaActual) || fechaMestruacionC.equals(fechaActual)) {
+                    totalSemanas += 1
+            }
+        }
+
+        fechaMestruacionC.add(Calendar.DATE, -7)  // se le resta 7 dias
+        //Toast.makeText(this, ""+fechaMestruacionC.time, Toast.LENGTH_LONG).show()
+
+        // se calcula la diferencia en dias que hay entre la fecha actual y la fecha de la semana de la ultima mestruacion fechaMestruacionC
+        val millisAcompletarHastaFechaActual = fechaActual.timeInMillis - fechaMestruacionC.getTimeInMillis()
         val diasAcompletarHastaFechaActual = TimeUnit.MILLISECONDS.toDays(millisAcompletarHastaFechaActual)
 
         var semanas: Double
@@ -107,17 +122,17 @@ class CalculoEdadGestacionalActivity : AppCompatActivity() {
         var diferenciaDias = BigDecimal(semanas)
         diferenciaDias = diferenciaDias.setScale(1, RoundingMode.DOWN)
 
-        Toast.makeText(this, "$semanas diferenciaDias: $diferenciaDias diasAcompletarHastaFechaActual: $diasAcompletarHastaFechaActual", Toast.LENGTH_LONG).show()
-        if(diasAcompletarHastaFechaActual < 0) {
-            totalSemanas = (totalSemanas + (diferenciaDias.toFloat()))
-        }
-        else if(diasAcompletarHastaFechaActual >= 0 && diasAcompletarHastaFechaActual < 7){
+        //Toast.makeText(this, "fecha actual: " + fechaActual.time + " FUM: " + fechaMestruacionC.time , Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, ""+diasAcompletarHastaFechaActual, Toast.LENGTH_LONG).show()
+
+        if(diasAcompletarHastaFechaActual >= 0 && diasAcompletarHastaFechaActual < 7){
             val dias = "0."+diasAcompletarHastaFechaActual
-            totalSemanas = totalSemanas + dias.toFloat()
+            totalSemanas += dias.toFloat()
         }
         else{
-            totalSemanas = totalSemanas + diferenciaDias.toFloat()
+            totalSemanas += diferenciaDias.toFloat()
         }
+
         this.txtSemanaGestacion.text = String.format("%.1f Semanas de gestación", totalSemanas)
 
         // Se calcula la fecha probable del parto
@@ -130,5 +145,6 @@ class CalculoEdadGestacionalActivity : AppCompatActivity() {
         fechaUltimaRegla = dateFormat.format(cfecha.time)
 
         this.txtFechaProbableParto.text = fechaUltimaRegla
+
     }
 }

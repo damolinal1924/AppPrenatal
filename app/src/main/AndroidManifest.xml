@@ -3,6 +3,9 @@
         xmlns:dist="http://schemas.android.com/apk/distribution"
         package="com.mlsoluciones.prenatal">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <dist:module dist:instant="true" />
 
     <application
@@ -17,6 +20,7 @@
         <activity android:name=".ActivityPerfil" />
         <activity android:name=".ActivitySubirEccobtreticaTransvaginal" />
         <activity android:name=".ActivitySubirEcografiaTranslucenciaNucal" />
+        <activity android:name=".ActivitySubirEcografiaDopplerArteriaUterinas" />
         <activity android:name=".EcografiaActivity" />
         <activity
                 android:name=".HomeTabActivity"
