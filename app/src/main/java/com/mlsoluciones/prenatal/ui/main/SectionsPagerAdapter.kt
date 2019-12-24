@@ -29,12 +29,12 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) : 
                 return FragmentEcografiaTrimestre1()
             }
             1 -> {
-                return FragmentExamenTrimestre1()
+                return FragmentEcografiaTrimestre2()
             }
             2 -> {
-                return PruevaActivity()
+                return FragmentEcografiaTrimestre3()
             }
-            else -> return PruevaActivity()
+            else -> return FragmentEcografiaTrimestre1()
         }
     }
 

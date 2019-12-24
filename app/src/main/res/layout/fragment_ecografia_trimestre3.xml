@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|top"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="80dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="20dp">
+
+            <Button
+                    android:id="@+id/btnEcooTransabdominal"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Ecografía obstétrica transabdominal"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btnPerfilBiofisico"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Perfil biofísico "
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btnDooplerEvaluacionCirculacion"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Doppler de evaluación de circulación fetoplacentaria"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btnDooplerCirculacionFeto"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Doppler de circulación feto - placentaria"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

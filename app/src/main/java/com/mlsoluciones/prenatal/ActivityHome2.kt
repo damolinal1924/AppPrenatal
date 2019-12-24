@@ -11,9 +11,17 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.MenuItemCompat
 import androidx.annotation.DrawableRes
+import com.mlsoluciones.prenatal.model.UsersDBHelper
 import kotlinx.android.synthetic.main.activity_home2.*
+import java.math.BigDecimal
+import java.math.RoundingMode
+import java.text.SimpleDateFormat
+import java.util.*
+import java.util.concurrent.TimeUnit
 
 class ActivityHome2 : AppCompatActivity() {
+
+    lateinit var usersDBHelper : UsersDBHelper
 
     private val itemAdapter by lazy {
         ItemAdapter { position: Int, item: Item ->
@@ -200,6 +208,8 @@ class ActivityHome2 : AppCompatActivity() {
             }
             R.id.navigation_vacuna -> {
                 textMessage.setText("")
+                val intento1 = Intent(this, VacunaActivity::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_examenes -> {
@@ -219,11 +229,12 @@ class ActivityHome2 : AppCompatActivity() {
     }
 
     var textNotification_badge: TextView? = null
-    var mCartItemCount = 10
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home2)
+
+        usersDBHelper = UsersDBHelper(this)
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view_home)
 
@@ -264,15 +275,20 @@ class ActivityHome2 : AppCompatActivity() {
         val actionView = MenuItemCompat.getActionView(menuItem)
         textNotification_badge = actionView.findViewById(R.id.notification_badge) as TextView
 
-        // se quita el badge de notificacion cuando no exista nada que notificar
-        textNotification_badge!!.setText("")
-        Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
-        textNotification_badge!!.setBackgroundResource(android.R.color.transparent)
+        var edadGestacional = showAllUsers()
+        var numNotificacion = selNotificacion(edadGestacional)
 
-        // se muestra el badge de notificacion cuando exista que notificar
-        //textNotification_badge!!.setText("58");
-        //textNotification_badge!!.setBackgroundResource(R.drawable.badge_background);
-        //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+        if(numNotificacion == 0){
+            // se quita el badge de notificacion cuando no exista nada que notificar
+            textNotification_badge!!.setText("")
+            textNotification_badge!!.setBackgroundResource(android.R.color.transparent)
+            Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+        }else{
+            // se muestra el badge de notificacion cuando exista que notificar
+            textNotification_badge!!.setText(numNotificacion.toString())
+            textNotification_badge!!.setBackgroundResource(R.drawable.badge_background)
+            Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+        }
 
         actionView.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View) {
@@ -286,7 +302,8 @@ class ActivityHome2 : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id = item.getItemId()
         if (id == R.id.menunotificacion) {
-            Toast.makeText(this, "Se presionó el ícono de notificación 1", Toast.LENGTH_LONG).show()
+            val intento1 = Intent(this, ActivityNotificacion::class.java)
+            startActivity(intento1)
             return true
         }
         if (id == R.id.btnMenuCerrarSesion) {
@@ -295,10 +312,107 @@ class ActivityHome2 : AppCompatActivity() {
             return true
         }
         if (id == R.id.menuSignoAlarma) {
-            Toast.makeText(this, "Se presionó el ícono de signo de alarma", Toast.LENGTH_LONG).show()
+            val intento1 = Intent(this, ActivitySignosAlarmas::class.java)
+            startActivity(intento1)
             return true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    fun selNotificacion(edadGestacional: Float) : Int {
+
+        //var mje: String = ""
+        var notificacion = usersDBHelper.selNotificacion(edadGestacional)
+
+        Toast.makeText(this, "Total de registros: " + notificacion.size, Toast.LENGTH_LONG).show()
+
+        return notificacion.size
+    }
+
+    fun showAllUsers():Float{
+        var users = usersDBHelper.readAllUsers()
+        var fechaUltimaMenstruacion: String = ""
+        users.forEach {
+            fechaUltimaMenstruacion = it.fechaUltimaMenstruacion
+        }
+        var edadGestacional: Float
+        var resulEdadGestacional = calcularEdadGestacional(fechaUltimaMenstruacion)
+
+        if(resulEdadGestacional >= 1F && resulEdadGestacional <= 12.6F ){
+            edadGestacional = 12.6F
+        }
+        else if(resulEdadGestacional >= 13F && resulEdadGestacional <= 24.6F ){
+            edadGestacional = 24.6F
+        }
+        else{
+            edadGestacional = 40F
+        }
+        return edadGestacional
+    }
+
+    fun calcularEdadGestacional(fechaUltimaMestruacion: String) :Float{
+        var totalSemanas: Float = 0F
+        val dateFormat = SimpleDateFormat("dd/MM/yyyy")
+        val fecha = Date()
+        val fechaActual = Calendar.getInstance()
+        fechaActual.time = fecha
+
+        var fechaMestruacionC = Calendar.getInstance()
+        fechaMestruacionC.time = dateFormat.parse(fechaUltimaMestruacion)
+
+        while(fechaMestruacionC.before(fechaActual) || fechaMestruacionC.equals(fechaActual)){
+
+            fechaMestruacionC.add(Calendar.MONTH, 1)  // se le suma 1 mes
+            //Toast.makeText(this, ""+fechaMestruacionC.time, Toast.LENGTH_LONG).show()
+
+            if(fechaMestruacionC.before(fechaActual) || fechaMestruacionC.equals(fechaActual)) {
+                totalSemanas += 4F
+                if (totalSemanas == 12F || totalSemanas == 25F) {
+                    totalSemanas += 1
+                }
+            }
+        }
+
+        fechaMestruacionC.add(Calendar.MONTH, -1)  // se le resta 1 mes
+        //Toast.makeText(this, ""+fechaMestruacionC.time, Toast.LENGTH_LONG).show()
+
+        while(fechaMestruacionC.before(fechaActual) || fechaMestruacionC.equals(fechaActual)){
+
+            fechaMestruacionC.add(Calendar.DATE, 7)  // se le agrega 7 dias
+            //Toast.makeText(this, ""+fechaMestruacionC.time, Toast.LENGTH_LONG).show()
+            if(fechaMestruacionC.before(fechaActual) || fechaMestruacionC.equals(fechaActual)) {
+                totalSemanas += 1
+            }
+        }
+
+        fechaMestruacionC.add(Calendar.DATE, -7)  // se le resta 7 dias
+        //Toast.makeText(this, ""+fechaMestruacionC.time, Toast.LENGTH_LONG).show()
+
+        // se calcula la diferencia en dias que hay entre la fecha actual y la fecha de la semana de la ultima mestruacion fechaMestruacionC
+        val millisAcompletarHastaFechaActual = fechaActual.timeInMillis - fechaMestruacionC.getTimeInMillis()
+        val diasAcompletarHastaFechaActual = TimeUnit.MILLISECONDS.toDays(millisAcompletarHastaFechaActual)
+
+        var semanas: Double
+        // se divide la diferencia de dia entre 1 semana (7 dias)
+        // para saber a cuantas semanas equivalen los dias de diferencia
+        semanas = (diasAcompletarHastaFechaActual / "7".toDouble())
+
+        // se limita a un solo decimal, sin redondear
+        var diferenciaDias = BigDecimal(semanas)
+        diferenciaDias = diferenciaDias.setScale(1, RoundingMode.DOWN)
+
+        //Toast.makeText(this, "fecha actual: " + fechaActual.time + " FUM: " + fechaMestruacionC.time , Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, ""+diasAcompletarHastaFechaActual, Toast.LENGTH_LONG).show()
+
+        if(diasAcompletarHastaFechaActual >= 0 && diasAcompletarHastaFechaActual < 7){
+            val dias = "0."+diasAcompletarHastaFechaActual
+            totalSemanas += dias.toFloat()
+        }
+        else{
+            totalSemanas += diferenciaDias.toFloat()
+        }
+
+        return totalSemanas
     }
 
     private fun loadSemana1(frag: FragmentSemana1) {

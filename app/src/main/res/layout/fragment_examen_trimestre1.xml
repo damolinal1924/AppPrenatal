@@ -23,7 +23,7 @@
                 tools:layout_editor_absoluteY="20dp">
 
             <Button
-                    android:id="@+id/btnEcooTransvaginal"
+                    android:id="@+id/btn1"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -35,10 +35,10 @@
                     android:text="Hemograma"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/btnEcoTranslucenciaNucal"
+                    android:id="@+id/btn2"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -48,13 +48,13 @@
                     android:drawableRight="@drawable/ic_right_24dp"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:text="Hemoclasificación "
+                    android:text="Hemoclasificación"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/btnDoopleArteria"
+                    android:id="@+id/btn3"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -64,13 +64,13 @@
                     android:drawableRight="@drawable/ic_right_24dp"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:text="Citología "
+                    android:text="Citología"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/btn4"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -83,10 +83,10 @@
                     android:text="Frotis vaginal"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/btn5"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -96,13 +96,13 @@
                     android:drawableRight="@drawable/ic_right_24dp"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:text="Uorianalisis "
+                    android:text="Uorianalisis"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/btn6"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -112,13 +112,13 @@
                     android:drawableRight="@drawable/ic_right_24dp"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:text="Urocultivo "
+                    android:text="Urocultivo"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/btn7"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -131,10 +131,10 @@
                     android:text="VIH"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/button9"
+                    android:id="@+id/btn8"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -147,10 +147,10 @@
                     android:text="Toxoplasma igG igM"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/button10"
+                    android:id="@+id/btn9"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -163,10 +163,10 @@
                     android:text="Hepatitis b"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/button11"
+                    android:id="@+id/btn10"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -179,10 +179,10 @@
                     android:text="Citomegalovirus"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/button12"
+                    android:id="@+id/btn11"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -195,10 +195,10 @@
                     android:text="Vdrl "
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/button13"
+                    android:id="@+id/btn12"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -211,10 +211,10 @@
                     android:text="Rubeola"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             <Button
-                    android:id="@+id/button14"
+                    android:id="@+id/btn13"
                     style="@style/Widget.AppCompat.Button"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
@@ -227,7 +227,7 @@
                     android:text="Glicemia en ayunas"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
         </LinearLayout>
     </ScrollView>

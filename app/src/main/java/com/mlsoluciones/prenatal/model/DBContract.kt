@@ -19,6 +19,7 @@ object DBContract {
             val COLUMN_MADRE_RH_NEGATIVO = "madreRhNegativo"
             val COLUMN_PADRE_RH_POSITIVO = "padreRhPositivo"
             val COLUMN_HIJO_ANT_RH_POSITIVO = "hijoAnteriorRhPositivo"
+            val COLUMN_FECHA_ULTIMA_MENSTRUACION = "fechaUltimaMenstruacion"
 
         }
     }
@@ -34,6 +35,8 @@ object DBContract {
             val COLUMN_TIPO_EXAMEN = "tipoExamen"
             val COLUMN_EXAMEN_OPCIONAL = "examenOpcional"
             val COLUMN_IMG_EXAMEN = "imgExamen"
+            val COLUMN_TRIMESTRE_DESDE = "trimestreDesde"
+            val COLUMN_TRIMESTRE_HASTA = "trimestreHasta"
         }
     }
 }

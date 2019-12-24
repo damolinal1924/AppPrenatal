@@ -12,10 +12,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnRegistrate.setOnClickListener {
-            //val intento1 = Intent(this, RegistrateActivity::class.java)
-            //startActivity(intento1)
-            val intento1 = Intent(this, CalculoEdadGestacionalActivity::class.java)
+            val intento1 = Intent(this, RegistrateActivity::class.java)
             startActivity(intento1)
+            //val intento1 = Intent(this, CalculoEdadGestacionalActivity::class.java)
+            //startActivity(intento1)
         }
 
         btnInicioSesion.setOnClickListener {

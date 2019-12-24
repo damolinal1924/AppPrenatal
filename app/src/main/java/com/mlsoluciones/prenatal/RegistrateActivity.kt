@@ -85,11 +85,12 @@ class RegistrateActivity : AppCompatActivity() {
         if(this.rbHijoAntRHsi.isChecked){
             hijoAnteriorRhPositivo = 1
         }
+        var fechaUltimaMenstruacion = "07/08/1924"
 
         var result = usersDBHelper.insertUser(UserModel(iduser = 0, nombre = nombre, email = email, telefono = telefono,
             contrasena = contrasena, edadGestacional = edadGestacional, semanaGestacionEcografia = semanaGestacionEcografia,
             fechaProbableParto = fechaProbableParto, madreRhNegativo = madreRhNegativo, padreRhPositivo = padreRhPositivo,
-            hijoAnteriorRhPositivo = hijoAnteriorRhPositivo))
+            hijoAnteriorRhPositivo = hijoAnteriorRhPositivo, fechaUltimaMenstruacion = fechaUltimaMenstruacion))
 
         //clear all edittext
         this.txtnombre.setText("")
@@ -104,7 +105,6 @@ class RegistrateActivity : AppCompatActivity() {
         this.rbPadreRHno.isChecked = false
         this.rbHijoAntRHno.isChecked = false
 
-
         if(result != -1L){
             Toast.makeText(this, "Datos guardados exitosamente!", Toast.LENGTH_LONG).show()
             activityCalcularEdadGestacional()
@@ -118,8 +118,10 @@ class RegistrateActivity : AppCompatActivity() {
         var mje: String = ""
         users.forEach {
 
-            mje = mje + it.iduser.toString() + " - " + it.nombre + " - " + it.fechaProbableParto.toString() + " - " +
-                    it.edadGestacional.toString() + " - madre: " + it.madreRhNegativo + " - padre: " + it.padreRhPositivo + " - hijo: " + it.hijoAnteriorRhPositivo
+            mje = mje + it.iduser.toString() + " - " + it.nombre + " - " + it.fechaUltimaMenstruacion +
+                    " *** " + it.fechaProbableParto + " - " +
+                    it.edadGestacional.toString() + " - madre: " + it.madreRhNegativo + " - padre: " +
+                    it.padreRhPositivo + " - hijo: " + it.hijoAnteriorRhPositivo
 
         }
         Toast.makeText(this, mje, Toast.LENGTH_LONG).show()

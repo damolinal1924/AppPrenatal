@@ -6,21 +6,28 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.mlsoluciones.prenatal.model.UsersDBHelper
 import java.util.*
 import java.text.SimpleDateFormat
 import kotlinx.android.synthetic.main.activity_calculo_edad_gestacional.*
+import kotlinx.android.synthetic.main.activity_subir_eccobtretica_transvaginal.*
 import java.math.BigDecimal
 import java.math.RoundingMode
 import java.util.concurrent.TimeUnit
 
 class CalculoEdadGestacionalActivity : AppCompatActivity() {
 
+    lateinit var usersDBHelper : UsersDBHelper
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculo_edad_gestacional)
+
+        usersDBHelper = UsersDBHelper(this)
 
         // logica para cargar la fecha
         val mPickTimeBtn = findViewById<Button>(R.id.btnfechamestruacion)
@@ -39,7 +46,6 @@ class CalculoEdadGestacionalActivity : AppCompatActivity() {
                 textView.setText(""+mDay + "/" + mes + "/" + mYear)
             }, year, month, day)
             dpd.show()
-
         }
     }
 
@@ -64,8 +70,12 @@ class CalculoEdadGestacionalActivity : AppCompatActivity() {
             return true
         }
         if (id == R.id.btnGuardar) {
-            val intento1 = Intent(this, ActivityLogin::class.java)
-            startActivity(intento1)
+            if(!dtfechamestruacion.text.toString().equals("")) {
+                updateTusuario()
+            }
+            else{
+                Toast.makeText(this, "Calcule la edad gestacional antes de guardar", Toast.LENGTH_LONG).show()
+            }
             return true
         }
         return super.onOptionsItemSelected(item)
@@ -146,5 +156,24 @@ class CalculoEdadGestacionalActivity : AppCompatActivity() {
 
         this.txtFechaProbableParto.text = fechaUltimaRegla
 
+    }
+
+    fun updateTusuario(){
+        var edadGestacional = txtSemanaGestacion.text.toString().replace(" Semanas de gestación", "").toFloat()
+        var fechaProbableParto = txtFechaProbableParto.text.toString()
+        var fechaUltimaMenstruacion = dtfechamestruacion.text.toString()
+
+        var result = usersDBHelper.updateTusuario(1, edadGestacional, fechaProbableParto, fechaUltimaMenstruacion)
+
+        Toast.makeText(this, "Resultado " + result, Toast.LENGTH_LONG).show()
+
+        if(result){
+            Toast.makeText(this, "Edad gestacional guardada exitosamente!", Toast.LENGTH_LONG).show()
+            val intento1 = Intent(this, ActivityLogin::class.java)
+            startActivity(intento1)
+        }
+        else{
+            Toast.makeText(this, "Ocurrio un error al momento de guardar!", Toast.LENGTH_LONG).show()
+        }
     }
 }

@@ -32,9 +32,9 @@ class SectionsTabExamenes(private val context: Context, fm: FragmentManager) : F
                 return FragmentEcografiaTrimestre1()
             }
             2 -> {
-                return PruevaActivity()
+                return FragmentExamenTrimestre1()
             }
-            else -> return PruevaActivity()
+            else -> return FragmentExamenTrimestre1()
         }
     }
 

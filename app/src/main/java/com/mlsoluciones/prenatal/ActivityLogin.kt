@@ -19,7 +19,7 @@ class ActivityLogin : AppCompatActivity() {
 
         usersDBHelper = UsersDBHelper(this)
 
-        selTexamenById()
+        //selTexamenById()
 
         // agrega el icono de ir atras del menu actionBar
         var actionbar = supportActionBar
@@ -59,10 +59,12 @@ class ActivityLogin : AppCompatActivity() {
 
         var mje: String = ""
         var examens = usersDBHelper.selTexamenById("EXAMEN3")
+
         examens.forEach {
-            mje = mje + it.codigo + " - " + it.nombreExamen + " - " + it.numTrimestre.toString() + " - " + it.imgExamen.toString() + " - "
+            mje = mje + it.codigo + " - " + it.nombreExamen + " - " + it.trimestreHasta + " - " +
+                    it.numTrimestre.toString() + " - " + it.imgExamen.toString() + " - "
         }
-        //Toast.makeText(this, mje, Toast.LENGTH_LONG).show()
+        Toast.makeText(this, mje, Toast.LENGTH_LONG).show()
     }
 
     fun activityHome(){
