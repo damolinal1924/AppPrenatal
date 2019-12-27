@@ -160,7 +160,7 @@
                     android:drawableRight="@drawable/ic_right_24dp"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:text="Hepatitis b"
+                    android:text="Hepatitis B"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
                     android:textColor="@color/black" />
@@ -192,7 +192,7 @@
                     android:drawableRight="@drawable/ic_right_24dp"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:text="Vdrl "
+                    android:text="Vdrl"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
                     android:textColor="@color/black" />

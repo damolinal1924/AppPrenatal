@@ -48,6 +48,36 @@ class FragmentExamenTrimestre1 : Fragment(){
             startActivity(intent)
         }
 
+        view.btn8.setOnClickListener {
+            val intent = Intent(activity, ActivitySubirExamTaxoplasma::class.java)
+            startActivity(intent)
+        }
+
+        view.btn9.setOnClickListener {
+            val intent = Intent(activity, ActivitySubirExamHepatitisB::class.java)
+            startActivity(intent)
+        }
+
+        view.btn10.setOnClickListener {
+            val intent = Intent(activity, ActivitySubirExamCitomegalovirus::class.java)
+            startActivity(intent)
+        }
+
+        view.btn11.setOnClickListener {
+            val intent = Intent(activity, ActivitySubirExamVdrl::class.java)
+            startActivity(intent)
+        }
+
+        view.btn12.setOnClickListener {
+            val intent = Intent(activity, ActivitySubirExamRubeola::class.java)
+            startActivity(intent)
+        }
+
+        view.btn13.setOnClickListener {
+            val intent = Intent(activity, ActivitySubirExamGlicemia::class.java)
+            startActivity(intent)
+        }
+
         return view
     }
 }

@@ -40,6 +40,12 @@
         <activity android:name=".ActivitySubirExamUorianalisis" />
         <activity android:name=".ActivitySubirExamUrocultivo" />
         <activity android:name=".ActivitySubirExamVih" />
+        <activity android:name=".ActivitySubirExamTaxoplasma" />
+        <activity android:name=".ActivitySubirExamHepatitisB" />
+        <activity android:name=".ActivitySubirExamCitomegalovirus" />
+        <activity android:name=".ActivitySubirExamVdrl" />
+        <activity android:name=".ActivitySubirExamRubeola" />
+        <activity android:name=".ActivitySubirExamGlicemia" />
         <activity android:name=".EcografiaActivity" />
         <activity
                 android:name=".HomeTabActivity"
