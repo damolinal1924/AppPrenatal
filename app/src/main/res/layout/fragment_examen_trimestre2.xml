@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|top"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="80dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="20dp">
+
+            <Button
+                    android:id="@+id/btn1"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="VIH"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btn2"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Toxoplasma igG igM"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btn3"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Hepatitis B"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btn4"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Citomegalovirus"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btn5"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="vdrl"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btn6"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Curva de tolerancia a la glucosa con carga de 75 mg"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btn7"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Coombs indirecto"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btn8"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="urocultivo"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btn9"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Uroanalisis"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            <Button
+                    android:id="@+id/btn10"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/degradado"
+                    android:drawableRight="@drawable/ic_right_24dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Hemograma"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

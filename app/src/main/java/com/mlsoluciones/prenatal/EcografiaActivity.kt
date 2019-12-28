@@ -37,10 +37,14 @@ class EcografiaActivity : AppCompatActivity() {
             }
             R.id.navigation_ecografia -> {
                 textMessage.setText("")
+                val intento1 = Intent(this, EcografiaActivity::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_vacuna -> {
                 textMessage.setText("")
+                val intento1 = Intent(this, VacunaActivity::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_examenes -> {

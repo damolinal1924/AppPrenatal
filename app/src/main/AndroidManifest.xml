@@ -46,6 +46,17 @@
         <activity android:name=".ActivitySubirExamVdrl" />
         <activity android:name=".ActivitySubirExamRubeola" />
         <activity android:name=".ActivitySubirExamGlicemia" />
+        <activity android:name=".ActivitySubirExamVihT2" />
+        <activity android:name=".ActivitySubirExamToxoplasmaT2" />
+        <activity android:name=".ActivitySubirExamHepatitisT2" />
+        <activity android:name=".ActivitySubirExamCitomegalovirusT2" />
+        <activity android:name=".ActivitySubirExamVdrlT2" />
+        <activity android:name=".ActivitySubirExamCurvaToleranciaT2" />
+        <activity android:name=".ActivitySubirExamCoombsT2" />
+        <activity android:name=".ActivitySubirExamUrocultivoT2" />
+        <activity android:name=".ActivitySubirExamUroanalisisT2" />
+        <activity android:name=".ActivitySubirExamHemogramaT2" />
+
         <activity android:name=".EcografiaActivity" />
         <activity
                 android:name=".HomeTabActivity"
