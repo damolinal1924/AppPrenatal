@@ -1,13 +1,14 @@
 package com.mlsoluciones.prenatal
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.TextView
 import android.widget.Toast
 import com.mlsoluciones.prenatal.model.UsersDBHelper
 import kotlinx.android.synthetic.main.activity_login.*
+
 
 class ActivityLogin : AppCompatActivity() {
 
@@ -25,20 +26,21 @@ class ActivityLogin : AppCompatActivity() {
         var actionbar = supportActionBar
         actionbar!!.setDisplayHomeAsUpEnabled(true)
         actionbar!!.setDisplayShowHomeEnabled(true)
+
     }
 
     fun validarDatos(v: View){
-
-        activityHome()
-        //if(txtemail.text.toString().equals("")){
-        //    Toast.makeText(this, "Por favor ingrese correo eléctronico", Toast.LENGTH_LONG).show()
-        //}
-        //else if(txtcontrasena.text.toString().equals("")){
-        //    Toast.makeText(this, "Por favor ingrese la contraseña", Toast.LENGTH_LONG).show()
-        //}
-        //else{
-        //    loginUser()
-        //}
+        //onClick()
+        //activityHome()
+        if(txtemail.text.toString().equals("")){
+            Toast.makeText(this, "Por favor ingrese correo eléctronico", Toast.LENGTH_LONG).show()
+        }
+        else if(txtcontrasena.text.toString().equals("")){
+            Toast.makeText(this, "Por favor ingrese la contraseña", Toast.LENGTH_LONG).show()
+        }
+        else{
+            loginUser()
+        }
     }
 
     fun loginUser(){
@@ -77,4 +79,6 @@ class ActivityLogin : AppCompatActivity() {
         onBackPressed()
         return super.onSupportNavigateUp()
     }
+
+
 }

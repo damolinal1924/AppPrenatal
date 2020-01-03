@@ -291,7 +291,7 @@ class UsersDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
              "SELECT * FROM " + DBContract.ExamenEntry.TABLE_NAME + " " +
              "WHERE " + DBContract.ExamenEntry.COLUMN_EXAMEN_OPCIONAL + "=1 AND " +
              DBContract.ExamenEntry.COLUMN_CODIGO + " " + "NOT IN ('EXAMEN27', 'EXAMEN28', 'EXAMEN33'," +
-             " 'EXAMEN34', 'EXAMEN35', 'EXAMEN43', 'EXAMEN44')", null)
+             " 'EXAMEN34', 'EXAMEN35', 'EXAMEN43', 'EXAMEN44', 'EXAMEN26', 'EXAMEN31')", null)
         } catch (e: SQLiteException) {
             db.execSQL(SQL_CREATE_TEXAMEN)
             return ArrayList()
@@ -332,7 +332,7 @@ class UsersDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
 
     companion object {
         // Si cambia el esquema de la base de datos, debe incrementar la versión de la base de datos.
-        val DATABASE_VERSION = 1
+        val DATABASE_VERSION = 2
         val DATABASE_NAME = "PrenatalApp.db"
 
         private val SQL_CREATE_TUSUARIO =

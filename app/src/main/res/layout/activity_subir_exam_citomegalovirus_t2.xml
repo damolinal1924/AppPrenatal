@@ -21,7 +21,7 @@
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="134dp"
-                    android:background="@drawable/img_ecografia_tercer_trimestre"
+                    android:background="@drawable/img_examenes"
                     android:orientation="vertical">
 
             </LinearLayout>
@@ -32,7 +32,7 @@
                     android:layout_height="32dp"
                     android:paddingStart="20dp"
                     android:paddingTop="10dp"
-                    android:text="VIH"
+                    android:text="Citomegalovirus"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 

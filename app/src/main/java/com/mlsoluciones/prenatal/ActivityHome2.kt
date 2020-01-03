@@ -8,7 +8,6 @@ import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.view.MenuItemCompat
 import androidx.annotation.DrawableRes
 import com.mlsoluciones.prenatal.model.UsersDBHelper
@@ -25,7 +24,7 @@ class ActivityHome2 : AppCompatActivity() {
 
     private val itemAdapter by lazy {
         ItemAdapter { position: Int, item: Item ->
-            Toast.makeText(this@ActivityHome2, "Pos ${position}", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this@ActivityHome2, "Pos ${position}", Toast.LENGTH_LONG).show()
             item_list.smoothScrollToPosition(position)
             when(position){
                 0 -> {
@@ -267,7 +266,7 @@ class ActivityHome2 : AppCompatActivity() {
         return items
     }
     // se asocia el menu ActionBar a la activity actual
-    public override fun onCreateOptionsMenu(menu: Menu): Boolean {
+     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menuopciones, menu)
 
         val menuItem = menu.findItem(R.id.menunotificacion)
@@ -282,12 +281,12 @@ class ActivityHome2 : AppCompatActivity() {
             // se quita el badge de notificacion cuando no exista nada que notificar
             textNotification_badge!!.setText("")
             textNotification_badge!!.setBackgroundResource(android.R.color.transparent)
-            Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
         }else{
             // se muestra el badge de notificacion cuando exista que notificar
             textNotification_badge!!.setText(numNotificacion.toString())
             textNotification_badge!!.setBackgroundResource(R.drawable.badge_background)
-            Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
         }
 
         actionView.setOnClickListener(object : View.OnClickListener {
@@ -324,7 +323,7 @@ class ActivityHome2 : AppCompatActivity() {
         //var mje: String = ""
         var notificacion = usersDBHelper.selNotificacion(edadGestacional)
 
-        Toast.makeText(this, "Total de registros: " + notificacion.size, Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, "Total de registros: " + notificacion.size, Toast.LENGTH_LONG).show()
 
         return notificacion.size
     }

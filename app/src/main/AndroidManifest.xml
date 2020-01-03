@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <dist:module dist:instant="true" />
 
@@ -56,7 +57,15 @@
         <activity android:name=".ActivitySubirExamUrocultivoT2" />
         <activity android:name=".ActivitySubirExamUroanalisisT2" />
         <activity android:name=".ActivitySubirExamHemogramaT2" />
-
+        <activity android:name=".ActivitySubirExamHemogramaT3" />
+        <activity android:name=".ActivitySubirExamVihT3" />
+        <activity android:name=".ActivitySubirExamToxoplasmaT3" />
+        <activity android:name=".ActivitySubirExamHepatitisT3" />
+        <activity android:name=".ActivitySubirExamCitomegalovirusT3" />
+        <activity android:name=".ActivitySubirExamVdrlT3" />
+        <activity android:name=".ActivitySubirExamCultivoRectoVaginalT3" />
+        <activity android:name=".ActivitySubirExamUrocultivoT3" />
+        <activity android:name=".ActivitySubirExamUroanalisisT3" />
         <activity android:name=".EcografiaActivity" />
         <activity
                 android:name=".HomeTabActivity"

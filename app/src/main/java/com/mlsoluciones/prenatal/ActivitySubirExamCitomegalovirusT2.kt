@@ -39,6 +39,8 @@ class ActivitySubirExamCitomegalovirusT2 : AppCompatActivity() {
         when (item.itemId) {
             R.id.navigation_home -> {
                 textMessage.setText("")
+                val intento1 = Intent(this, ActivityHome2::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_ecografia -> {
@@ -79,7 +81,7 @@ class ActivitySubirExamCitomegalovirusT2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_subir_exam_hepatitis_t2)
+        setContentView(R.layout.activity_subir_exam_citomegalovirus_t2)
 
         usersDBHelper = UsersDBHelper(this)
 

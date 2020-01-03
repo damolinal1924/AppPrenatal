@@ -72,7 +72,7 @@ class HomeTabActivity : AppCompatActivity() {
         textNotification_badge = actionView.findViewById(R.id.notification_badge) as TextView
 
         // se quita el badge de notificacion cuando no exista nada que notificar
-        textNotification_badge!!.setText("");
+        textNotification_badge!!.setText("")
         Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
         textNotification_badge!!.setBackgroundResource(android.R.color.transparent);
 

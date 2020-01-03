@@ -10,8 +10,14 @@
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp" android:layout_marginBottom="10dp">
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+
+
+        android:layout_marginBottom="10dp">
 
         <ImageView
                 android:id="@+id/imageView3"
@@ -25,13 +31,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:id="@+id/txtemail" android:hint="Correo eléctronico" android:paddingTop="20dp"/>
+                android:id="@+id/txtemail"
+                android:hint="Correo eléctronico"
+                android:paddingTop="20dp"/>
 
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:id="@+id/txtcontrasena" android:hint="Contraseña" android:paddingTop="20dp"
+                android:id="@+id/txtcontrasena"
+                android:hint="Contraseña"
+                android:paddingTop="20dp"
         />
         <Button
                 android:text="Iniciar sesión"
@@ -43,7 +53,9 @@
         <TextView
                 android:text="¿Se te olvido tu contraseña?"
                 android:layout_width="match_parent"
-                android:layout_height="70dp" android:id="@+id/textView2" android:paddingTop="30dp"
+                android:layout_height="70dp"
+                android:id="@+id/textView2"
+                android:paddingTop="30dp"
         />
     </LinearLayout>
 

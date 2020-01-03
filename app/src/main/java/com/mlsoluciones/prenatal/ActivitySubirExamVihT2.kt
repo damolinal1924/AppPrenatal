@@ -39,6 +39,8 @@ class ActivitySubirExamVihT2 : AppCompatActivity() {
         when (item.itemId) {
             R.id.navigation_home -> {
                 textMessage.setText("")
+                val intento1 = Intent(this, ActivityHome2::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_ecografia -> {

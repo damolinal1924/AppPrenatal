@@ -10,7 +10,7 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="119dp"
-            android:background="@drawable/img_ecografia"
+            android:background="@drawable/img_examenes"
             android:orientation="vertical"
             tools:ignore="MissingConstraints">
 
