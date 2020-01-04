@@ -18,29 +18,26 @@ class ActivitySignosAlarmas : AppCompatActivity() {
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                textMessage.setText("")
                 val intento1 = Intent(this, ActivityHome2::class.java)
                 startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_ecografia -> {
-                textMessage.setText("")
                 val intento1 = Intent(this, EcografiaActivity::class.java)
                 startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_vacuna -> {
-                textMessage.setText("")
+                val intento1 = Intent(this, VacunaActivity::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_examenes -> {
-                textMessage.setText("")
                 val intento1 = Intent(this, ActivityExamenes::class.java)
                 startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_perfil -> {
-                textMessage.setText("")
                 val intento1 = Intent(this, ActivityPerfil::class.java)
                 startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
@@ -86,7 +83,7 @@ class ActivitySignosAlarmas : AppCompatActivity() {
         listView.setOnItemClickListener(){ adapterView, view, position, id ->
             val itemAtPos = adapterView.getItemAtPosition(position)
             val itemIdAtPos = adapterView.getItemIdAtPosition(position)
-            Toast.makeText(this, "Click on item at $itemAtPos its item id $itemIdAtPos", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, "Click on item at $itemAtPos its item id $itemIdAtPos", Toast.LENGTH_LONG).show()
         }
 
         // agrega el icono de ir atras del menu actionBar
@@ -107,7 +104,7 @@ class ActivitySignosAlarmas : AppCompatActivity() {
 
         // se quita el badge de notificacion cuando no exista nada que notificar
         textNotification_badge!!.setText("")
-        Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
         textNotification_badge!!.setBackgroundResource(android.R.color.transparent)
 
         // se muestra el badge de notificacion cuando exista que notificar
@@ -127,7 +124,7 @@ class ActivitySignosAlarmas : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id = item.getItemId()
         if (id == R.id.menunotificacion) {
-            Toast.makeText(this, "Se presionó el ícono de notificación 1", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, "Se presionó el ícono de notificación 1", Toast.LENGTH_LONG).show()
             return true
         }
         if (id == R.id.btnMenuCerrarSesion) {
@@ -136,7 +133,7 @@ class ActivitySignosAlarmas : AppCompatActivity() {
             return true
         }
         if (id == R.id.menuSignoAlarma) {
-            Toast.makeText(this, "Se presionó el ícono de signo de alarmas", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, "Se presionó el ícono de signo de alarmas", Toast.LENGTH_LONG).show()
             return true
         }
         return super.onOptionsItemSelected(item)

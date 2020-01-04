@@ -21,7 +21,7 @@
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="134dp"
-                    android:background="@drawable/embarazada_vacunas"
+                    android:background="@drawable/img_ecografia"
                     android:orientation="vertical">
 
             </LinearLayout>

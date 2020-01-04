@@ -98,12 +98,12 @@ class ActivityPerfil : AppCompatActivity() {
             // se quita el badge de notificacion cuando no exista nada que notificar
             textNotification_badge!!.setText("")
             textNotification_badge!!.setBackgroundResource(android.R.color.transparent)
-            Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
         }else{
             // se muestra el badge de notificacion cuando exista que notificar
             textNotification_badge!!.setText(numNotificacion.toString())
             textNotification_badge!!.setBackgroundResource(R.drawable.badge_background)
-            Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
         }
 
         actionView.setOnClickListener(object : View.OnClickListener {
@@ -141,7 +141,7 @@ class ActivityPerfil : AppCompatActivity() {
         //var mje: String = ""
         var notificacion = usersDBHelper.selNotificacion(edadGestacional)
 
-        Toast.makeText(this, "Total de registros: " + notificacion.size, Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, "Total de registros: " + notificacion.size, Toast.LENGTH_LONG).show()
 
         return notificacion.size
     }
@@ -151,6 +151,7 @@ class ActivityPerfil : AppCompatActivity() {
         var fechaUltimaMenstruacion: String = ""
         users.forEach {
             fechaUltimaMenstruacion = it.fechaUltimaMenstruacion
+            lblnomusuario.text = it.nombre.toUpperCase()
         }
         var edadGestacional: Float
         var resulEdadGestacional = calcularEdadGestacional(fechaUltimaMenstruacion)
@@ -162,7 +163,6 @@ class ActivityPerfil : AppCompatActivity() {
         else{
             this.btnSemanaGestacion.text = String.format("%.1f Semanas de embarazo", resulEdadGestacional)
         }
-
 
         if(resulEdadGestacional >= 1F && resulEdadGestacional <= 12.6F ){
             edadGestacional = 12.6F

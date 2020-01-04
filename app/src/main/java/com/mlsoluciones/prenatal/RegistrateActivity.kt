@@ -124,7 +124,7 @@ class RegistrateActivity : AppCompatActivity() {
                     it.padreRhPositivo + " - hijo: " + it.hijoAnteriorRhPositivo
 
         }
-        Toast.makeText(this, mje, Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, mje, Toast.LENGTH_LONG).show()
         if(!mje.equals("")){
             Toast.makeText(this, "Usuario ya se encuentra registrado", Toast.LENGTH_LONG).show()
         }

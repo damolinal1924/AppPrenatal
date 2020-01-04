@@ -48,7 +48,7 @@ class ActivityLogin : AppCompatActivity() {
         val pass = txtcontrasena.text.toString()
         var user = usersDBHelper.loginUser(email, pass)
 
-        Toast.makeText(this, "User::: " + user, Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, "User::: " + user, Toast.LENGTH_LONG).show()
         if(user > 0){
             activityHome()
         }
@@ -66,7 +66,7 @@ class ActivityLogin : AppCompatActivity() {
             mje = mje + it.codigo + " - " + it.nombreExamen + " - " + it.trimestreHasta + " - " +
                     it.numTrimestre.toString() + " - " + it.imgExamen.toString() + " - "
         }
-        Toast.makeText(this, mje, Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, mje, Toast.LENGTH_LONG).show()
     }
 
     fun activityHome(){

@@ -30,31 +30,26 @@ class EcografiaActivity : AppCompatActivity() {
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                textMessage.setText("")
                 val intento1 = Intent(this, ActivityHome2::class.java)
                 startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_ecografia -> {
-                textMessage.setText("")
                 val intento1 = Intent(this, EcografiaActivity::class.java)
                 startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_vacuna -> {
-                textMessage.setText("")
                 val intento1 = Intent(this, VacunaActivity::class.java)
                 startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_examenes -> {
-                textMessage.setText("")
                 val intento1 = Intent(this, ActivityExamenes::class.java)
                 startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_perfil -> {
-                textMessage.setText("")
                 val intento1 = Intent(this, ActivityPerfil::class.java)
                 startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
@@ -115,12 +110,12 @@ class EcografiaActivity : AppCompatActivity() {
             // se quita el badge de notificacion cuando no exista nada que notificar
             textNotification_badge!!.setText("")
             textNotification_badge!!.setBackgroundResource(android.R.color.transparent)
-            Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
         }else{
             // se muestra el badge de notificacion cuando exista que notificar
             textNotification_badge!!.setText(numNotificacion.toString())
             textNotification_badge!!.setBackgroundResource(R.drawable.badge_background)
-            Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
         }
 
         actionView.setOnClickListener(object : View.OnClickListener {
@@ -158,7 +153,7 @@ class EcografiaActivity : AppCompatActivity() {
         //var mje: String = ""
         var notificacion = usersDBHelper.selNotificacion(edadGestacional)
 
-        Toast.makeText(this, "Total de registros: " + notificacion.size, Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, "Total de registros: " + notificacion.size, Toast.LENGTH_LONG).show()
 
         return notificacion.size
     }

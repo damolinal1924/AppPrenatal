@@ -1,5 +1,6 @@
 package com.mlsoluciones.prenatal
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -19,23 +20,28 @@ class HomeTabActivity : AppCompatActivity() {
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                textMessage.setText(R.string.title_home)
+                val intento1 = Intent(this, ActivityHome2::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_ecografia -> {
-                textMessage.setText("Ecografias")
+                val intento1 = Intent(this, EcografiaActivity::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_vacuna -> {
-                textMessage.setText("Vacunas")
+                val intento1 = Intent(this, VacunaActivity::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_examenes -> {
-                textMessage.setText("Examenes")
+                val intento1 = Intent(this, ActivityExamenes::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_perfil -> {
-                textMessage.setText("Perfil")
+                val intento1 = Intent(this, ActivityPerfil::class.java)
+                startActivity(intento1)
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -73,7 +79,7 @@ class HomeTabActivity : AppCompatActivity() {
 
         // se quita el badge de notificacion cuando no exista nada que notificar
         textNotification_badge!!.setText("")
-        Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
         textNotification_badge!!.setBackgroundResource(android.R.color.transparent);
 
         // se muestra el badge de notificacion cuando exista que notificar

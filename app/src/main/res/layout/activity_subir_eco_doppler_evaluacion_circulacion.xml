@@ -21,7 +21,7 @@
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="134dp"
-                    android:background="@drawable/img_ecografia_tercer_trimestre"
+                    android:background="@drawable/img_ecografia"
                     android:orientation="vertical">
 
             </LinearLayout>

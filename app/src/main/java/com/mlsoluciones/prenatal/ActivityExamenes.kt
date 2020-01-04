@@ -108,12 +108,12 @@ class ActivityExamenes : AppCompatActivity() {
             // se quita el badge de notificacion cuando no exista nada que notificar
             textNotification_badge!!.setText("")
             textNotification_badge!!.setBackgroundResource(android.R.color.transparent)
-            Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
         }else{
             // se muestra el badge de notificacion cuando exista que notificar
             textNotification_badge!!.setText(numNotificacion.toString())
             textNotification_badge!!.setBackgroundResource(R.drawable.badge_background)
-            Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, """notification_badge: ${textNotification_badge!!.text}""", Toast.LENGTH_LONG).show()
         }
 
         actionView.setOnClickListener(object : View.OnClickListener {
@@ -151,7 +151,7 @@ class ActivityExamenes : AppCompatActivity() {
         //var mje: String = ""
         var notificacion = usersDBHelper.selNotificacion(edadGestacional)
 
-        Toast.makeText(this, "Total de registros: " + notificacion.size, Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, "Total de registros: " + notificacion.size, Toast.LENGTH_LONG).show()
 
         return notificacion.size
     }

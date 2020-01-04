@@ -29,11 +29,6 @@ class FragmentEcografiaTrimestre3 : Fragment() {
             startActivity(intent)
         }
 
-        view.btnDooplerCirculacionFeto.setOnClickListener {
-            val intent = Intent(activity, ActivitySubirEcoDopplerCirculacionFeto::class.java)
-            startActivity(intent)
-        }
-
         return view
 
     }

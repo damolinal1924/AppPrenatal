@@ -68,22 +68,6 @@
                     android:textAllCaps="false"
                     android:textColor="@color/black" />
 
-            <Button
-                    android:id="@+id/btnDooplerCirculacionFeto"
-                    style="@style/Widget.AppCompat.Button"
-                    android:layout_width="320dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/degradado"
-                    android:drawableRight="@drawable/ic_right_24dp"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:text="Doppler de circulación feto - placentaria"
-                    android:textAlignment="textStart"
-                    android:textAllCaps="false"
-                    android:textColor="@color/black" />
-
         </LinearLayout>
     </ScrollView>
 

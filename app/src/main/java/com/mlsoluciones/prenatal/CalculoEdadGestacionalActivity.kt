@@ -165,7 +165,7 @@ class CalculoEdadGestacionalActivity : AppCompatActivity() {
 
         var result = usersDBHelper.updateTusuario(1, edadGestacional, fechaProbableParto, fechaUltimaMenstruacion)
 
-        Toast.makeText(this, "Resultado " + result, Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, "Resultado " + result, Toast.LENGTH_LONG).show()
 
         if(result){
             Toast.makeText(this, "Edad gestacional guardada exitosamente!", Toast.LENGTH_LONG).show()
