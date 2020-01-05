@@ -114,6 +114,22 @@ class UsersDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         return true
     }
 
+    @Throws(SQLiteConstraintException::class)
+    fun updateClaveUsuario(idUser: Int, clave: String): Boolean {
+        // Obtiene el repositorio de datos en modo de escritura
+        val db = writableDatabase
+        // Define 'where' part of query.
+        val selection = DBContract.UserEntry.COLUMN_ID_USER + "='" + idUser + "'"
+
+        val values = ContentValues()
+        values.put(DBContract.UserEntry.COLUMN_CONTRASENA, clave)
+
+        // Issue SQL statement.
+        db.update(DBContract.UserEntry.TABLE_NAME, values, selection, null)
+
+        return true
+    }
+
     fun selImgExamen(codigo: String): ByteArray? {
         val db = writableDatabase
 
@@ -332,7 +348,7 @@ class UsersDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
 
     companion object {
         // Si cambia el esquema de la base de datos, debe incrementar la versión de la base de datos.
-        val DATABASE_VERSION = 2
+        val DATABASE_VERSION = 1
         val DATABASE_NAME = "PrenatalApp.db"
 
         private val SQL_CREATE_TUSUARIO =

@@ -23,6 +23,19 @@
                     android:background="@drawable/img_signo_alarma"
                     android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@android:style/Widget.DeviceDefault.Light.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp"
+                    android:paddingTop="60dp"
+                    android:text="Signos de alarmas"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/colorPrimary" />
+
             </LinearLayout>
 
             <ListView

@@ -52,8 +52,8 @@ class RegistrateActivity : AppCompatActivity() {
         else if(txtcontrasena.text.toString().equals("")){
             Toast.makeText(this, "Por favor ingrese contraseña", Toast.LENGTH_LONG).show()
         }
-        else if(txtcontrasena.text.toString().length < 6){
-            Toast.makeText(this, "La contraseña debe se mayor a 6 caracteres", Toast.LENGTH_LONG).show()
+        else if(txtcontrasena.text.toString().length < 5){
+            Toast.makeText(this, "La contraseña debe se mayor a 5 caracteres", Toast.LENGTH_LONG).show()
         }
         else if(!txtcontrasena.text.toString().equals(txtRepContrasena.text.toString())){
             Toast.makeText(this, "La contraseña no coinciden", Toast.LENGTH_LONG).show()

@@ -88,6 +88,7 @@ class ActivitySignosAlarmas : AppCompatActivity() {
 
         // agrega el icono de ir atras del menu actionBar
         var actionbar = supportActionBar
+        actionbar!!.setTitle("Signos de alarmas")
         actionbar!!.setDisplayHomeAsUpEnabled(true)
         actionbar!!.setDisplayShowHomeEnabled(true)
 

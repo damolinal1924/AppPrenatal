@@ -107,18 +107,6 @@ class HomeTabActivity : AppCompatActivity() {
             Toast.makeText(this, "Se presionó el ícono de notificación 2", Toast.LENGTH_LONG).show()
             return true
         }
-        if (id == R.id.opcion1) {
-            Toast.makeText(this, "Se presionó la opción 1 del menú", Toast.LENGTH_LONG).show()
-            return true
-        }
-        if (id == R.id.opcion2) {
-            Toast.makeText(this, "Se presionó la opción 2 del menú", Toast.LENGTH_LONG).show()
-            return true
-        }
-        if (id == R.id.opcion3) {
-            Toast.makeText(this, "Se presionó la opción 3 del menú", Toast.LENGTH_LONG).show()
-            return true
-        }
         return super.onOptionsItemSelected(item)
     }
 }

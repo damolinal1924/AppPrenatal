@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivityRecuperarClave">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            app:srcCompat="@drawable/img_recuperar_clave" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Olvidaste tu contraseña?"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Para recuperar tu contraseña por favor ingrese una nueva que puedas recordar." />
+
+        <EditText
+            android:id="@+id/txtClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nueva contraseña"
+            android:inputType="textPassword"
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/txtRepetirClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repetir nueva contraseña"
+            android:inputType="textPassword"
+            android:paddingTop="20dp" />
+
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="validarDatos"
+            android:text="Actualizar"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</RelativeLayout>
