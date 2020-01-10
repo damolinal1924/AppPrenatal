@@ -348,7 +348,7 @@ class UsersDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
 
     companion object {
         // Si cambia el esquema de la base de datos, debe incrementar la versión de la base de datos.
-        val DATABASE_VERSION = 1
+        val DATABASE_VERSION = 9
         val DATABASE_NAME = "PrenatalApp.db"
 
         private val SQL_CREATE_TUSUARIO =

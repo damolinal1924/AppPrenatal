@@ -121,7 +121,7 @@ class RegistrateActivity : AppCompatActivity() {
             mje = mje + it.iduser.toString() + " - " + it.nombre + " - " + it.fechaUltimaMenstruacion +
                     " *** " + it.fechaProbableParto + " - " +
                     it.edadGestacional.toString() + " - madre: " + it.madreRhNegativo + " - padre: " +
-                    it.padreRhPositivo + " - hijo: " + it.hijoAnteriorRhPositivo
+                    it.padreRhPositivo + " - hijo: " + it.hijoAnteriorRhPositivo + " ** E-mail: " + it.email
 
         }
         //Toast.makeText(this, mje, Toast.LENGTH_LONG).show()
