@@ -327,7 +327,7 @@ class ActivitySubirEcografiaTranslucenciaNucal : AppCompatActivity() {
     fun selImgExamen() {
 
         var imagens = usersDBHelper.selImgExamen("EXAMEN1")
-        Toast.makeText(this, "imagen data " + imagens, Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, "imagen data " + imagens, Toast.LENGTH_LONG).show()
 
         if(imagens != null){
             image_view.alpha = 5F

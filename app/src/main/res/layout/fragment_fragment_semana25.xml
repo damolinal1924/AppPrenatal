@@ -33,7 +33,7 @@
                     android:layout_gravity="top"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:src="@drawable/embarazada_vacunas" />
+                    android:src="@drawable/img_semana_embarazo" />
 
             <TextView
                     android:id="@+id/textView9"

@@ -62,26 +62,6 @@
             tools:layout_editor_absoluteY="40dp" />
 
         <Button
-                android:id="@+id/btnEcooTransvaginal"
-                style="@style/Widget.AppCompat.Button"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:text="Notificación"
-                android:textAllCaps="false" />
-
-        <Button
-                android:id="@+id/btnEcoTranslucenciaNucal"
-                style="@style/Widget.AppCompat.Button"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Sobre nosotros"
-                android:textAllCaps="false" />
-
-        <Button
                 android:id="@+id/btnCerrarSesion"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="320dp"

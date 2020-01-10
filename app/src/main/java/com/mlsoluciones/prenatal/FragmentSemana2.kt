@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment
 
 class FragmentSemana2 : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return LayoutInflater.from(container?.context).inflate(R.layout.fragment_fragment_semana2,container,false)
-    }
+  override fun onCreateView(
+          inflater: LayoutInflater,
+          container: ViewGroup?,
+          savedInstanceState: Bundle?
+  ): View? {
+    return LayoutInflater.from(container?.context).inflate(R.layout.fragment_fragment_semana2,container,false)
+  }
 }
